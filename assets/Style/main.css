@@ -761,7 +761,7 @@
 
 .ilc-img{
     margin: 10px 20px 10px 20px;
-    background-image: url(ILC.jpeg);
+    background-image: url(../img/ILC.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1231,7 +1231,7 @@
     grid-area: i1;
     width: auto;
     height: auto;
-    background-image: url(inClass1.jpeg);
+    background-image: url(../img/inClass1.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1242,7 +1242,7 @@
     background: blue;
     width: 100%;
     height: 100%;
-    background-image: url(inClass2.jpeg);
+    background-image: url(../img/inClass2.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1254,7 +1254,7 @@
     background: black;
     width: 100%;
     height: 100%;
-    background-image: url(inClass3.jpeg);
+    background-image: url(../img/inClass3.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1266,7 +1266,7 @@
     background: yellow;
     width: 100%;
     height: 100%;
-    background-image: url(inClass4.jpeg);
+    background-image: url(../img/nClass4.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1278,7 +1278,7 @@
     background: green;
     width: 100%;
     height: 100%;
-    background-image: url(inClass5.jpeg);
+    background-image: url(../img/inClass5.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
