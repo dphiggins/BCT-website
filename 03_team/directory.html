@@ -55,7 +55,7 @@
 
   		<script> // Creating a list of HTML elements with id="name_#", where # goes from 0 to the number of names in the directory
 		    var rawFile = new XMLHttpRequest();
-		    rawFile.open("GET", "file:///C:../assets/data/tutorList.txt", false);
+		    rawFile.open("GET", "../assets/data/tutorList.txt", false);
 		    rawFile.onreadystatechange = function ()
 		    {
 		        if(rawFile.readyState === 4)
