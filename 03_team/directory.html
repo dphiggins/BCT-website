@@ -8,7 +8,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
     <script src="https://kit.fontawesome.com/9cbf0b77ec.js" crossorigin="anonymous"></script>
     <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+     <!-- Adding Axios for API requests -->
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	
     <link rel="stylesheet" href="../assets/Style/main.css">
+   
+
 </head>
 <body>
     <div class="nav">
@@ -39,6 +44,33 @@
         </div>
     </div>
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+	     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
+
+	<!-- Adding realtime-database Library -->
+	<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDTMz_4Oa4qPgKj0gSXvFr2cumNU9NHmEM",
+        authDomain: "bct-website-aae85.firebaseapp.com",
+        databaseURL: "https://bct-website-aae85.firebaseio.com",
+        projectId: "bct-website-aae85",
+        storageBucket: "bct-website-aae85.appspot.com",
+        messagingSenderId: "579830059860",
+        appId: "1:579830059860:web:f95d8e1165b7d3f4aeaec1",
+        measurementId: "G-JT2D4NZ9RQ"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+
     <div class="lead-content-wrapper">
 
     	<input type="checkbox" id="outreach" name="outreachCheckBox" checked>
@@ -55,24 +87,17 @@
   		<label for="otherCheckBox"> Others </label><br>
 
   		<script> // Creating a list of HTML elements with id="name_#", where # goes from 0 to the number of names in the directory
-		    
-		    // Requiring fs module in which 
-		    // readFile function is defined. 
-		    const fs = require('fs') 
-		      
-		    // Reading data in utf-8 format 
-		    // which is a type of character set. 
-		    // Instead of 'utf-8' it can be  
-		    // other character set also like 'ascii' 
-		    fs.readFile("../assets/data/tutorList.txt", 'utf-8', (err, data) => { 
-		        if (err) throw err; 
-		      
-		        // Converting Raw Buffer to text 
-		        // data using tostring function. 
-	            for (var i = 0; i < JSON.parse(data).length; i++) {
-	        		document.write(`<p id="name_${i}"></p>`);
-	        	}
-		    }) 
+  			axios.get('../assets/data/tutorList.json')
+  			  .then(response => {
+  				console.log("Getting tutorList data");
+  				for (var i = 0; i < response.length; i++) {
+        			document.write(`<p id="name_${i}"></p>`);
+        		}
+  			  })
+  			  .catch(error => {
+  				console.error(error);
+  				weatherString = "tutorList not available"
+  			  })
   		</script>
 
     </div>
@@ -91,8 +116,8 @@
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
     <script>
         gsap.from('.lead-content-wrapper', {duration: 1, opacity: 0, scale: 0})
-
     </script>
+
     <script src="../assets/Scripts/main.js"></script>
     <script src="../assets/Scripts/directory.js"></script>
 </body>
