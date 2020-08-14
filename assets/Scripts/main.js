@@ -17,11 +17,11 @@ burger.addEventListener('click', () => {
 });
 
 dropDown1.addEventListener('click', () => {
-    dropDown1.classList.toggle("activate-drop");
+    dropDown1.classList.toggle("activate-drop")
     
 });
 
 dropDown2.addEventListener('click', () => {
-    dropDown2.classList.toggle("activate-drop");
+    dropDown2.classList.toggle("activate-drop")
     
 });
