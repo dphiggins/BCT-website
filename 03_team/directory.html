@@ -55,7 +55,7 @@
 
   		<script> // Creating a list of HTML elements with id="name_#", where # goes from 0 to the number of names in the directory
   			var fr = new FileReader();
-  			fr.readAsText("../data/tutorList.txt")
+  			fr.readAsText("../data/tutorList.txt");
 
   			for (var i = 0; i < JSON.parse(fr.result).length; i++) {
 				document.write(`<p id="name_${i}"></p>`);
