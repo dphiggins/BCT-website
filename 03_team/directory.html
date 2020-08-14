@@ -59,7 +59,13 @@
     	<input type="checkbox" id="others" name="otherCheckBox" checked>
   		<label for="otherCheckBox"> Others </label><br>
 
-  		<script src="writeHTML.js"></script>
+  		<!--<script src="writeHTML.js"></script>-->
+  		<script>
+  			// Creating a list of HTML elements with id="name_#", where # goes from 0 to the number of names in the directory
+			for (var i = 0; i < 100; i++) {
+				document.write(`<p id="name_${i}"></p>`);
+			}
+  		</script>
 
     </div>
 
