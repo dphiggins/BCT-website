@@ -4,7 +4,7 @@ axios.get('../assets/data/tutorList.json')
 	console.log("Getting tutorList data");
 	for (var i = 0; i < response.length; i++) {
 			document.write(`<p id="name_${i}"></p>`);
-		}
+	}
   })
   .catch(error => {
 	console.error(error);

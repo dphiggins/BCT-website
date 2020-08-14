@@ -13,26 +13,26 @@ measurementId: "G-JT2D4NZ9RQ"
 firebase.initializeApp(firebaseConfig);
 
 /*-----Reading Data from Database. TODO: Move away from local file-----*/
-var directoryOBJ;
-axios.get('../assets/data/tutors.json')
+var directoryOBJ = axios.get('../assets/data/tutors.json')
   .then(response => {
   	console.log("Getting tutor data");
-  	directoryOBJ = response;
+  	return response.data;
   })
   .catch(error => {
 	console.error(error);
+	return null;
   });
 
 console.log(directoryOBJ);
 
-var tutorsList;
-axios.get('../assets/data/tutorList.json')
+var tutorsList = axios.get('../assets/data/tutorList.json')
   .then(response => {
 	console.log("Getting tutorList data");
-	tutorsList = response;
+	return response.data;
   })
   .catch(error => {
 	console.error(error);
+	return null;
   });
 
 console.log(tutorsList);
