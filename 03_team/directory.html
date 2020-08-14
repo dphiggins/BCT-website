@@ -8,14 +8,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
     <script src="https://kit.fontawesome.com/9cbf0b77ec.js" crossorigin="anonymous"></script>
     <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
-     <!-- Adding Axios for API requests -->
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	
+
     <link rel="stylesheet" href="../assets/Style/main.css">
    
 
 </head>
 <body>
+
     <div class="nav">
         <div class="logo">
             <div class="l"></div>
@@ -44,33 +43,6 @@
         </div>
     </div>
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-	<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
-
-	<!-- TODO: Add SDKs for Firebase products that you want to use
-	     https://firebase.google.com/docs/web/setup#available-libraries -->
-	<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
-
-	<!-- Adding realtime-database Library -->
-	<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
-
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyDTMz_4Oa4qPgKj0gSXvFr2cumNU9NHmEM",
-        authDomain: "bct-website-aae85.firebaseapp.com",
-        databaseURL: "https://bct-website-aae85.firebaseio.com",
-        projectId: "bct-website-aae85",
-        storageBucket: "bct-website-aae85.appspot.com",
-        messagingSenderId: "579830059860",
-        appId: "1:579830059860:web:f95d8e1165b7d3f4aeaec1",
-        measurementId: "G-JT2D4NZ9RQ"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
-    </script>
-
     <div class="lead-content-wrapper">
 
     	<input type="checkbox" id="outreach" name="outreachCheckBox" checked>
@@ -86,6 +58,8 @@
     	<input type="checkbox" id="others" name="otherCheckBox" checked>
   		<label for="otherCheckBox"> Others </label><br>
 
+		<!-- Adding Axios for API requests -->
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   		<script> // Creating a list of HTML elements with id="name_#", where # goes from 0 to the number of names in the directory
   			axios.get('../assets/data/tutorList.json')
   			  .then(response => {
