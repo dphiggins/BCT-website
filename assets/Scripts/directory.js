@@ -55,7 +55,7 @@ function isValidName(name) {
 		if ((position === "Development Team Member" ||
 			position === "Director of Development Team" ||
 			position === "Enrichment Course Instructor" ||
-			position === "Website Assitant" ||) && otherFilter) {return true;}
+			position === "Website Assitant") && otherFilter) {return true;}
 	}
 	return false;
 }
