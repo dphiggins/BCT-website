@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team | Boston COVID-Tutoring</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+    <script src="https://kit.fontawesome.com/9cbf0b77ec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/Style/main.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <div class="l"></div>
+            <div class="l2"></div>
+            <div class="l3"></div>
+            <a href="../index.html"> BostonCOVID-Tutoring</a>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <a href="../index.html">Home</a>
+                <a href="../01_about/index.html">About</a>
+                <a href="../02_subjects/index.html">Subjects</a>
+                <a href="../03_team/execs.html" id="active">Team</a>
+                <a href="../04_volunteer/index.html">Volunteer</a>
+        
+                
+                <a href="../05_signup/index.html" id="sign-up">Sign Up</a>
+                
+            </ul>
+            
+        </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </div>
+
+    <div class="lead-content-wrapper">
+
+    	<input type="checkbox" id="outreach" name="outreachCheckBox" checked>
+  		<label for="outreachCheckBox"> Outreach </label><br>
+  		<input type="checkbox" id="marketing" name="marketingCheckBox" checked>
+  		<label for="marketingCheckBox"> Marketing </label><br>
+  		<input type="checkbox" id="logistics" name="logisticsCheckBox" checked>
+  		<label for="logisticsCheckBox"> Logistics </label><br>
+  		<input type="checkbox" id="hr" name="hrCheckBox" checked>
+  		<label for="hrCheckBox"> Human Resources </label><br>
+  		<input type="checkbox" id="tutors" name="tutorCheckBox">
+  		<label for="tutorCheckBox"> Tutors </label><br>
+    	<input type="checkbox" id="others" name="otherCheckBox" checked>
+  		<label for="otherCheckBox"> Others </label><br>
+
+  		<script> // Creating a list of HTML elements with id="name_#", where # goes from 0 to the number of names in the directory
+  			var fr = new FileReader();
+  			fr.readAsText("../data/tutorList.txt")
+
+  			for (var i = 0; i < JSON.parse(fr.result).length; i++) {
+				document.write(`<p id="name_${i}"></p>`);
+			}
+  		</script>
+
+    </div>
+
+    <div class="footer">
+        <div class="copyright">Copyright &copy; 2020 Boston COVID-Tutoring</div>
+        <div class="f-divider"></div>
+        <div class="created">Created by Dylan Higgins and Connie Yang</div>
+        <div class="f-divider"></div>
+        <div class="socials">
+            <a href="mailto:bostoncovidtutoring@gmail.com"><i class="fab fa-google" id="gmail"></i></a>
+            <a href="https://www.instagram.com/bostoncovidtutoring/" id="insta"><i class="fab fa-instagram"></i></a>
+            <a href="facebook.com"><i class="fab fa-facebook-square" id="facebook"></i></a>
+        </div>
+    </div>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script>
+        gsap.from('.lead-content-wrapper', {duration: 1, opacity: 0, scale: 0})
+
+    </script>
+    <script src="../assets/Scripts/main.js"></script>
+</body>
+</html>
