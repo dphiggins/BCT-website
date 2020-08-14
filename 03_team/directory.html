@@ -54,22 +54,24 @@
   		<label for="otherCheckBox"> Others </label><br>
 
   		<script> // Creating a list of HTML elements with id="name_#", where # goes from 0 to the number of names in the directory
-		    var rawFile = new XMLHttpRequest();
-		    rawFile.open("GET", "../assets/data/tutorList.txt", false);
-		    rawFile.onreadystatechange = function ()
-		    {
-		        if(rawFile.readyState === 4)
-		        {
-		            if(rawFile.status === 200 || rawFile.status == 0)
-		            {
-		                var allText = rawFile.responseText;
-		                for (var i = 0; i < JSON.parse(allText).length; i++) {
-							document.write(`<p id="name_${i}"></p>`);
-						}
-		            }
-		        }
-		    }
-		    rawFile.send(null);
+		    
+		    // Requiring fs module in which 
+		    // readFile function is defined. 
+		    const fs = require('fs') 
+		      
+		    // Reading data in utf-8 format 
+		    // which is a type of character set. 
+		    // Instead of 'utf-8' it can be  
+		    // other character set also like 'ascii' 
+		    fs.readFile("../assets/data/tutorList.txt", 'utf-8', (err, data) => { 
+		        if (err) throw err; 
+		      
+		        // Converting Raw Buffer to text 
+		        // data using tostring function. 
+	            for (var i = 0; i < JSON.parse(data).length; i++) {
+	        		document.write(`<p id="name_${i}"></p>`);
+	        	}
+		    }) 
   		</script>
 
     </div>
