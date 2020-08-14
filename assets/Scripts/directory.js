@@ -1,11 +1,37 @@
+// Your web app's Firebase configuration
+var firebaseConfig = {
+apiKey: "AIzaSyDTMz_4Oa4qPgKj0gSXvFr2cumNU9NHmEM",
+authDomain: "bct-website-aae85.firebaseapp.com",
+databaseURL: "https://bct-website-aae85.firebaseio.com",
+projectId: "bct-website-aae85",
+storageBucket: "bct-website-aae85.appspot.com",
+messagingSenderId: "579830059860",
+appId: "1:579830059860:web:f95d8e1165b7d3f4aeaec1",
+measurementId: "G-JT2D4NZ9RQ"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
 /*-----Reading Data from Database. TODO: Move away from loval file-----*/
-var fr = new FileReader(); // temperory: reading from local file
+var directoryOBJ;
+axios.get('../assets/data/tutors.json')
+  .then(response => {
+  	console.log("Getting tutor data");
+  	directoryOBJ = response;
+  })
+  .catch(error => {
+	console.error(error);
+  });
 
-fr.readAsText("../data/tutors.json")
-var directoryOBJ = JSON.parse(fr.result); // getting tutors.json as an object
-
-fr.readAsText("../data/tutorList.txt")
-var tutorsList = JSON.parse(fr.result); // getting an array of tutor names
+var tutorsList;
+axios.get('../assets/data/tutorList.json')
+  .then(response => {
+	console.log("Getting tutorList data");
+	tutorsList = response;
+  })
+  .catch(error => {
+	console.error(error);
+  });
 
 /*-----Filter. TODO: Make filters look prettier-----*/
 var outreachFilter = true;

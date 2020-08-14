@@ -7,13 +7,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
     <script src="https://kit.fontawesome.com/9cbf0b77ec.js" crossorigin="anonymous"></script>
-    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
 
     <link rel="stylesheet" href="../assets/Style/main.css">
    
 
 </head>
 <body>
+	<!-- Adding Axios for API requests -->
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <div class="nav">
         <div class="logo">
@@ -58,21 +59,7 @@
     	<input type="checkbox" id="others" name="otherCheckBox" checked>
   		<label for="otherCheckBox"> Others </label><br>
 
-		<!-- Adding Axios for API requests -->
-		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  		<script> // Creating a list of HTML elements with id="name_#", where # goes from 0 to the number of names in the directory
-  			axios.get('../assets/data/tutorList.json')
-  			  .then(response => {
-  				console.log("Getting tutorList data");
-  				for (var i = 0; i < response.length; i++) {
-        			document.write(`<p id="name_${i}"></p>`);
-        		}
-  			  })
-  			  .catch(error => {
-  				console.error(error);
-  				weatherString = "tutorList not available"
-  			  })
-  		</script>
+  		<script src="writeHTML.js"></script>
 
     </div>
 
@@ -91,6 +78,17 @@
     <script>
         gsap.from('.lead-content-wrapper', {duration: 1, opacity: 0, scale: 0})
     </script>
+
+    	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+	     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
+
+	<!-- Adding realtime-database Library -->
+	<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+
 
     <script src="../assets/Scripts/main.js"></script>
     <script src="../assets/Scripts/directory.js"></script>
