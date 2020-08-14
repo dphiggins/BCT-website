@@ -23,9 +23,8 @@ var directoryPromise = axios.get('../assets/data/tutors.json')
 	return null;
   });
 
-var directoryOBJ = directoryPromise.then(function(result) {
-	return result;
-});
+let directoryOBJ;
+directoryPromise.then((result) => {directoryOBJ = result});
 
 console.log(directoryOBJ);
 
@@ -39,9 +38,8 @@ var tutorsPromise = axios.get('../assets/data/tutorList.json')
 	return null;
   });
 
-var tutorsList = tutorsPromise.then(function(result) {
-	return result;
-});
+let tutorsList;
+tutorsPromise.then((result) => {tutorsList = result});
 
 console.log(tutorsList);
 
