@@ -24,10 +24,7 @@ var directoryPromise = axios.get('../assets/data/tutors.json')
 	return null;
   });
 
-data.directoryOBJ = "";
-directoryPromise.then((result) => {data.directoryOBJ = result});
-
-console.log(data.directoryOBJ);
+console.log(directoryOBJ);
 
 var tutorsPromise = axios.get('../assets/data/tutorList.json')
   .then(response => {
@@ -39,10 +36,6 @@ var tutorsPromise = axios.get('../assets/data/tutorList.json')
 	return null;
   });
 
-data.tutorsList = "";
-tutorsPromise.then((result) => {data.tutorsList = result});
-
-console.log(data.tutorsList);
 
 /*-----Filter. TODO: Make filters look prettier-----*/
 var outreachFilter = true;
@@ -69,16 +62,20 @@ function showAllSelectedCard() {
 			 
 	Output: calls showCard() on all names selected by the filters
 	*/
-	var id = 0; // ID is within the range {0 - number of names}
-	for (var tutor in tutorsList) {
-		if (isValidName(tutor)) {
-			showCard(tutor, `name_${id}`);
-			id++;
-		}
-	}
+	directoryPromise.then((directoryOBJ) => {
+		tutorsPromise.then((tutorsList) => {
+			var id = 0; // ID is within the range {0 - number of names}
+			for (var tutor in tutorsList) {
+				if (isValidName(tutor, directoryOBJ)) {
+					showCard(tutor, `name_${id}`, directoryOBJ);
+					id++;
+				}
+			}
+		});
+	});
 }
 
-function isValidName(name) {
+function isValidName(name, directoryOBJ) {
 	/*
 	Input: (STRING) Name of tutor
 	Output: returns a boolean indicating whether or not the name matches the currently selected filters
@@ -97,7 +94,7 @@ function isValidName(name) {
 	return false;
 }
 
-function showCard(name, id) {
+function showCard(name, id, directoryOBJ) {
 	/*
 	Input: (STRING) Name of tutor, (STRING) id of HTML element
 	Output: updates the inner html of the specified HTML element to show tutor info
