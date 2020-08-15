@@ -61,7 +61,7 @@ function showAllSelectedCard() {
 	Output: calls showCard() on all names selected by the filters
 	*/
 	directoryPromise.then((directoryOBJ) => {
-		tutorsPromise.then((tutorsPromise) => {
+		tutorsPromise.then((tutorsList) => {
 			var id = 0; // ID is within the range {0 - number of names}
 			for (var tutor in tutorsList) {
 				if (isValidName(tutor, directoryOBJ)) {
