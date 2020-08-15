@@ -80,17 +80,18 @@ function isValidName(name, directoryOBJ) {
 	*/
 	console.log("name: " + name);
 	console.log("Directory name: " + directoryOBJ[name]);
+	var positionsList = directoryOBJ[name].position;
 
-	for (var position in directoryOBJ[name].position) {
-		if (position === "Director of Outreach" && outreachFilter) {return true;}
-		if (position === "Marketing Team Member" && marketingFilter) {return true;}
-		if ((position === "Logistics Member" || position === "Director of Logistics") && logisticsFilter) {return true;}
-		if (position === "Co-Director of Human Resources" && hrFilter) {return true;}
-		if (position === "Tutor" && tutorFilter) {return true;}
-		if ((position === "Development Team Member" ||
-			position === "Director of Development Team" ||
-			position === "Enrichment Course Instructor" ||
-			position === "Website Assitant") && otherFilter) {return true;}
+	for (var i in positionsList) {
+		if (positionsList[i] === "Director of Outreach" && outreachFilter) {return true;}
+		if (positionsList[i] === "Marketing Team Member" && marketingFilter) {return true;}
+		if ((positionsList[i] === "Logistics Member" || positionsList[i] === "Director of Logistics") && logisticsFilter) {return true;}
+		if (positionsList[i] === "Co-Director of Human Resources" && hrFilter) {return true;}
+		if (positionsList[i] === "Tutor" && tutorFilter) {return true;}
+		if ((positionsList[i] === "Development Team Member" ||
+			positionsList[i] === "Director of Development Team" ||
+			positionsList[i] === "Enrichment Course Instructor" ||
+			positionsList[i] === "Website Assitant") && otherFilter) {return true;}
 	}
 	return false;
 }
