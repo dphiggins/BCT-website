@@ -13,6 +13,7 @@ measurementId: "G-JT2D4NZ9RQ"
 firebase.initializeApp(firebaseConfig);
 
 /*-----Reading Data from Database. TODO: Move away from local file-----*/
+var data = {}; // a global object
 var directoryPromise = axios.get('../assets/data/tutors.json')
   .then(response => {
   	console.log("Getting tutor data");
@@ -23,10 +24,10 @@ var directoryPromise = axios.get('../assets/data/tutors.json')
 	return null;
   });
 
-let directoryOBJ;
-directoryPromise.then((result) => {directoryOBJ = result});
+data.directoryOBJ = "";
+directoryPromise.then((result) => {data.directoryOBJ = result});
 
-console.log(directoryOBJ);
+console.log(data.directoryOBJ);
 
 var tutorsPromise = axios.get('../assets/data/tutorList.json')
   .then(response => {
@@ -38,10 +39,10 @@ var tutorsPromise = axios.get('../assets/data/tutorList.json')
 	return null;
   });
 
-let tutorsList;
-tutorsPromise.then((result) => {tutorsList = result});
+data.tutorsList = "";
+tutorsPromise.then((result) => {data.tutorsList = result});
 
-console.log(tutorsList);
+console.log(data.tutorsList);
 
 /*-----Filter. TODO: Make filters look prettier-----*/
 var outreachFilter = true;
