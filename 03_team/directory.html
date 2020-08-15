@@ -81,7 +81,7 @@
 
 			do { // Need to pause the program while the file loads. Don't want to use document.write() after HTML finishes loading.
 				var x = null;
-			} while (!promise.finally(() => {return 1;}))
+			} while (!promise.finally(() => {return 1;}));
   		</script>
 
     </div>
