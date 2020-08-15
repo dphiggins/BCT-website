@@ -67,11 +67,10 @@ function showAllSelectedCard() {
 			var id = 0; // ID is within the range {0 - number of names}
 			for (var tutorIndex in tutorsList) {
 				if (isValidName(tutorsList[tutorIndex], directoryOBJ)) {
-					showCard(tutorsList[tutorIndex], `name_${id}`, directoryOBJ);
-					id++;
+					showCard(tutorsList[tutorIndex], `name_${tutorIndex}`, directoryOBJ);
 				} else { // this doesn't work yet. fix it soon.
-					console.log(`deleting id: name_${id}`);
-					document.getElementById(`name_${id}`).innerHTML = "";
+					console.log(`deleting id: name_${tutorIndex}`);
+					document.getElementById(`name_${tutorIndex}`).innerHTML = "";
 				}
 			}
 		});
