@@ -45,7 +45,12 @@
     </div>
 
     <div class="lead-content-wrapper">
-
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
     	<input type="checkbox" id="outreach" name="outreachCheckBox" checked>
   		<label for="outreachCheckBox"> Outreach </label><br>
   		<input type="checkbox" id="marketing" name="marketingCheckBox" checked>
@@ -62,9 +67,17 @@
   		<!--<script src="writeHTML.js"></script>-->
   		<script>
   			// Creating a list of HTML elements with id="name_#", where # goes from 0 to the number of names in the directory
-			for (var i = 0; i < 100; i++) {
-				document.write(`<p id="name_${i}">Hello</p>`);
-			}
+			axios.get('../assets/data/tutorList.json')
+			  .then(response => {
+				console.log("Getting tutorList data");
+				for (var i = 0; i < response.data.length; i++) {
+					document.write(`<p id="name_${i}"></p>`);
+				}
+			  })
+			  .catch(error => {
+				console.error(error);
+				return null;
+			  });
   		</script>
 
     </div>
