@@ -59,6 +59,7 @@ function showAllSelectedCard() {
 	Process: Runs whenever a filter changes
 			 
 	Output: calls showCard() on all names selected by the filters
+			removes any names not selected by the filters
 	*/
 	directoryPromise.then((directoryOBJ) => {
 		tutorsPromise.then((tutorsList) => {
@@ -67,6 +68,8 @@ function showAllSelectedCard() {
 				if (isValidName(tutorsList[tutorIndex], directoryOBJ)) {
 					showCard(tutorsList[tutorIndex], `name_${id}`, directoryOBJ);
 					id++;
+				} else {
+					document.getElementById(`name_${id}`).innerHTML = "";
 				}
 			}
 		});
