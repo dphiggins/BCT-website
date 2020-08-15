@@ -24,8 +24,6 @@ var directoryPromise = axios.get('../assets/data/tutors.json')
 	return null;
   });
 
-console.log(directoryOBJ);
-
 var tutorsPromise = axios.get('../assets/data/tutorList.json')
   .then(response => {
 	console.log("Getting tutorList data");
