@@ -62,12 +62,10 @@ function showAllSelectedCard() {
 	*/
 	directoryPromise.then((directoryOBJ) => {
 		tutorsPromise.then((tutorsList) => {
-			console.log("tutor List: " + tutorsList);
-			console.log("tutor 3: " + tutorsList[3]);
 			var id = 0; // ID is within the range {0 - number of names}
-			for (var tutor in tutorsList) {
-				if (isValidName(tutor, directoryOBJ)) {
-					showCard(tutor, `name_${id}`, directoryOBJ);
+			for (var tutorIndex in tutorsList) {
+				if (isValidName(tutorsList[tutorIndex], directoryOBJ)) {
+					showCard(tutorsList[tutorIndex], `name_${id}`, directoryOBJ);
 					id++;
 				}
 			}
@@ -80,8 +78,6 @@ function isValidName(name, directoryOBJ) {
 	Input: (STRING) Name of tutor
 	Output: returns a boolean indicating whether or not the name matches the currently selected filters
 	*/
-	console.log("Directory: " + directoryOBJ["Dan Bi"]);
-	console.log("name " + name);
 	for (var position in directoryOBJ[name].position) {
 		if (position === "Director of Outreach" && outreachFilter) {return true;}
 		if (position === "Marketing Team Member" && marketingFilter) {return true;}
