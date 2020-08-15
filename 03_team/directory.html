@@ -67,7 +67,10 @@
   		<!--<script src="writeHTML.js"></script>-->
   		<script>
   			// Creating a list of HTML elements with id="name_#", where # goes from 0 to the number of names in the directory
-			var promise = axios.get('../assets/data/tutorList.json')
+			
+			/* COME BACK TO THIS. NEED TO SOMEHOW GET DOCUMENT.WRITE() TO RUN BEFORE HTML LOADS
+			   IDEA: CONNECT THIS STRAIGHT TO FIREBASE SINCE WE'RE ONLY ASKING FOR LENGTH
+			var promise = axios.get('../assets/data/tutorList.json') 
 			  .then(response => {
 				console.log("Getting tutorList data");
 				for (var i = 0; i < response.data.length; i++) {
@@ -81,7 +84,11 @@
 
 			do { // Need to pause the program while the file loads. Don't want to use document.write() after HTML finishes loading.
 				var x = null;
-			} while (!promise.finally(() => {return 1;}));
+			} while (!promise.finally(() => {return 1;}));*/
+
+			for (var i = 0; i < 80; i++) { // hardcoding number of tutors: TODO: Change it
+					document.write(`<p id="name_${i}"></p>`);
+			}
   		</script>
 
     </div>
