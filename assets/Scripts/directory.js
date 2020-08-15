@@ -75,7 +75,7 @@ function showAllSelectedCard() {
 
 function isValidName(name, directoryOBJ) {
 	/*
-	Input: (STRING) Name of tutor
+	Input: (STRING) Name of tutor, (OBJ) JSON object of Tutors
 	Output: returns a boolean indicating whether or not the name matches the currently selected filters
 	*/
 	console.log("name: " + name);
@@ -98,7 +98,7 @@ function isValidName(name, directoryOBJ) {
 
 function showCard(name, id, directoryOBJ) {
 	/*
-	Input: (STRING) Name of tutor, (STRING) id of HTML element
+	Input: (STRING) Name of tutor, (STRING) id of HTML element, (OBJ) JSON object of Tutors
 	Output: updates the inner html of the specified HTML element to show tutor info
 			Shows Tutor Name and their Position
 			Example:
