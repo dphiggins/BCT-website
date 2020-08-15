@@ -13,7 +13,7 @@ measurementId: "G-JT2D4NZ9RQ"
 firebase.initializeApp(firebaseConfig);
 
 /*-----Reading Data from Database. TODO: Move away from local file-----*/
-var data = {}; // a global object
+
 var directoryPromise = axios.get('../assets/data/tutors.json')
   .then(response => {
   	console.log("Getting tutor data");
@@ -61,7 +61,7 @@ function showAllSelectedCard() {
 	Output: calls showCard() on all names selected by the filters
 	*/
 	directoryPromise.then((directoryOBJ) => {
-		tutorsPromise.then((tutorsList) => {
+		tutorsPromise.then((tutorsPromise) => {
 			var id = 0; // ID is within the range {0 - number of names}
 			for (var tutor in tutorsList) {
 				if (isValidName(tutor, directoryOBJ)) {
@@ -78,6 +78,8 @@ function isValidName(name, directoryOBJ) {
 	Input: (STRING) Name of tutor
 	Output: returns a boolean indicating whether or not the name matches the currently selected filters
 	*/
+	console.log("Directory: " + directoryOBJ)
+	console.log("name " + name);
 	for (var position in directoryOBJ[name].position) {
 		if (position === "Director of Outreach" && outreachFilter) {return true;}
 		if (position === "Marketing Team Member" && marketingFilter) {return true;}
