@@ -78,6 +78,9 @@ function isValidName(name, directoryOBJ) {
 	Input: (STRING) Name of tutor
 	Output: returns a boolean indicating whether or not the name matches the currently selected filters
 	*/
+	console.log("name: " + name);
+	console.log("Directory name: " + directoryOBJ[name]);
+
 	for (var position in directoryOBJ[name].position) {
 		if (position === "Director of Outreach" && outreachFilter) {return true;}
 		if (position === "Marketing Team Member" && marketingFilter) {return true;}
