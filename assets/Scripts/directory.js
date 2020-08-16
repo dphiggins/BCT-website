@@ -38,7 +38,6 @@ var tutorsPromise = axios.get('../assets/data/tutorList.json')
 /*-----Filter. TODO: Make filters look prettier-----*/
 var outreachFilter = true;
 var marketingFilter = true;
-var logisticsFilter = true;
 var hrFilter = true;
 var tutorFilter = false;
 var otherFilter = true;
@@ -47,7 +46,6 @@ showAllSelectedCard() // Show page with the default setting above
 // change filter's boolean status when clicked, and also update the selected cards
 document.getElementById("outreach").addEventListener("click", () => {outreachFilter = !outreachFilter; showAllSelectedCard();});
 document.getElementById("marketing").addEventListener("click", () => {marketingFilter = !marketingFilter; showAllSelectedCard();});
-document.getElementById("logistics").addEventListener("click", () => {logisticsFilter = !logisticsFilter; showAllSelectedCard();});
 document.getElementById("hr").addEventListener("click", () => {hrFilter = !hrFilter; showAllSelectedCard();});
 document.getElementById("tutors").addEventListener("click", () => {tutorFilter = !tutorFilter; showAllSelectedCard();});
 document.getElementById("others").addEventListener("click", () => {otherFilter = !otherFilter; showAllSelectedCard();});
@@ -88,14 +86,14 @@ function isValidName(name, directoryOBJ) {
 
 	for (var i in positionsList) {
 		if (positionsList[i] === "Director of Outreach" && outreachFilter) {return true;}
-		if (positionsList[i] === "Marketing Team Member" && marketingFilter) {return true;}
-		if ((positionsList[i] === "Logistics Member" || positionsList[i] === "Director of Logistics") && logisticsFilter) {return true;}
+		if ((positionsList[i] === "Director of Social Media" || positionsList[i] === "Marketing Team Member") && marketingFilter) {return true;}
 		if (positionsList[i] === "Co-Director of Human Resources" && hrFilter) {return true;}
 		if (positionsList[i] === "Tutor" && tutorFilter) {return true;}
 		if ((positionsList[i] === "Development Team Member" ||
 			positionsList[i] === "Director of Development Team" ||
 			positionsList[i] === "Enrichment Course Instructor" ||
-			positionsList[i] === "Website Assitant") && otherFilter) {return true;}
+			positionsList[i] === "Website Assitant" ||
+			positionsList[i] === "Director of Logistics") && otherFilter) {return true;}
 	}
 	console.log("False for: " + name);
 	return false;
