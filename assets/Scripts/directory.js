@@ -66,7 +66,6 @@ function showAllSelectedCard() {
 				if (isValidName(tutorsList[tutorIndex], directoryOBJ)) {
 					showCard(tutorsList[tutorIndex], `name_${tutorIndex}`, directoryOBJ);
 				} else { // this doesn't work yet. fix it soon.
-					console.log(`deleting id: name_${tutorIndex}`);
 					document.getElementById(`name_${tutorIndex}`).innerHTML = "";
 				}
 			}
@@ -92,7 +91,6 @@ function isValidName(name, directoryOBJ) {
 			positionsList[i] === "Website Assitant" ||
 			positionsList[i] === "Director of Logistics") && otherFilter) {return true;}
 	}
-	console.log("False for: " + name);
 	return false;
 }
 
