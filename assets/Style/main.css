@@ -925,13 +925,13 @@
 .lead-content-wrapper{
     background: white;
     width: 100vw;
+    font-family: 'Poppins';
 }
 .sen-mg{
-    font-family: 'Poppins';
     width: 80%;
     margin: 10% auto;
 }
-.team-divider{
+#team-divider{
     width: 90%;
     background: lightgrey;
     height: 3px;
