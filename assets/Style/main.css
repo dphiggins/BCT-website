@@ -925,6 +925,7 @@
 .lead-content-wrapper{
     background: white;
     width: 100vw;
+    font-family: 'Poppins';
 }
 .lead-title{
     font-family: 'Montserrat' , sans-serif;
