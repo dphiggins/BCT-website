@@ -1434,3 +1434,96 @@
         height: 1100px;
     }
 }
+
+
+/* TEAM styles */
+.sen-mg{
+    font-family: 'Poppins';
+    width: 80%;
+    margin: 10% auto;
+}
+#sen-mg-title{
+    font-family: 'Montserrat';
+    border-bottom: 4px solid lightgrey;
+}
+.people{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: center;
+    font-size: 16px;
+}
+.person{
+    border: 1px solid black;
+    width: 350px;
+    height: 450px;
+    background: #FBFCFC;
+    display: flex;
+    flex-direction: column;
+}
+.person:nth-child(1) .headshot{
+    background-image: url(../img/david.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.person:nth-child(2) .headshot{
+    background-image: url(../img/nathan.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.person:nth-child(3) .headshot{
+    background-image: url(../img/dan.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.person:nth-child(4) .headshot{
+    background-image: url(../img/dylan.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.headshot{
+    width: 100%;
+    height: 275px;
+    background: red;
+}
+#name{
+    font-weight: 700;
+    font-size: 1.5em;
+    margin: 20px 0 0 0;
+    align-self: center;
+}
+#position{
+    align-self: center;
+    font-weight: 500;
+    margin: 0 0 0 0;
+    color:rgb(153, 153, 153);
+}
+.bio-toggle{
+    align-self: center;
+    text-align: center;
+    width: 50px;
+    margin: 20px 0 10px 0;
+    background: black;
+    color: white;
+    padding: 8px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: all .3s ease-in-out;
+} 
+.person.bio-open{
+    height: auto;
+}
+.person p{
+    display: none;
+    margin: 5%;
+    transition: all .3s;
+}
+.person p.bio-open{
+    display: block;
+}
