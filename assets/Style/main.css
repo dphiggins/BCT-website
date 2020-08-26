@@ -11,8 +11,8 @@ figure {
 }
 
 figcaption {
-  font-size: 1rem;
-  color: black;
+  font-size: 0.5rem;
+  color: #7a7a7a;
 }
 
 /* useful classes */
