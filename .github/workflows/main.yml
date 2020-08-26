@@ -2,8 +2,8 @@ name: deploy_to_firebase_hosting
 
 on:
   push:
-    tags:
-      - release-production-*
+    branches:
+      - master
 
 jobs:
     deploy:
