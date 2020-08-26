@@ -12,6 +12,6 @@ If you are thinking about contributing to the website, thank you for trying to h
 Here's what you need to know to get started
 
 - Only push to the development branch
-- Pushing (or merging) to master will trigger a Github action that *automatically publishes the website*
+- Pushing (or merging) to master will trigger a Github action that **automatically publishes the website**
 	- So please never do this unless your code has been reviewed and approved.
 - We have created a [template](https://github.com/dphiggins/BCT-website/blob/master/public/assets/template.html) for our webpages. Use this to get started easily.
