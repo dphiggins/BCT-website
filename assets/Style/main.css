@@ -1440,12 +1440,12 @@
 .sen-mg{
     font-family: 'Poppins';
     width: 80%;
-    margin: 8% auto;
+    margin: auto auto;
 }
 #sen-mg-title{
     font-family: 'Montserrat';
     border-bottom: 4px solid lightgrey;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 .people{
     display: grid;
