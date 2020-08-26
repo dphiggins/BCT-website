@@ -61,13 +61,11 @@ function showAllSelectedCard() {
 	*/
 	directoryPromise.then((directoryOBJ) => {
 		tutorsPromise.then((tutorsList) => {
-			console.log("Processing Cards");
 			var id = 0; // ID is within the range {0 - number of names}
 			for (var tutorIndex in tutorsList) {
 				if (isValidName(tutorsList[tutorIndex], directoryOBJ)) {
 					showCard(tutorsList[tutorIndex], `name_${tutorIndex}`, directoryOBJ);
 				} else { // this doesn't work yet. fix it soon.
-					console.log(`deleting id: name_${tutorIndex}`);
 					document.getElementById(`name_${tutorIndex}`).innerHTML = "";
 				}
 			}
@@ -80,8 +78,6 @@ function isValidName(name, directoryOBJ) {
 	Input: (STRING) Name of tutor, (OBJ) JSON object of Tutors
 	Output: returns a boolean indicating whether or not the name matches the currently selected filters
 	*/
-	console.log("name: " + name);
-	console.log("Directory name: " + directoryOBJ[name]);
 	var positionsList = directoryOBJ[name].position;
 
 	for (var i in positionsList) {
@@ -95,7 +91,6 @@ function isValidName(name, directoryOBJ) {
 			positionsList[i] === "Website Assitant" ||
 			positionsList[i] === "Director of Logistics") && otherFilter) {return true;}
 	}
-	console.log("False for: " + name);
 	return false;
 }
 
