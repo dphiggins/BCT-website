@@ -1,8 +1,26 @@
+/* General Styles */
 *{
     margin: 0;
     box-sizing: border-box;
     padding: 0;
 }
+
+figure {
+    text-align:center;
+    margin: autopx;
+}
+
+figcaption {
+  font-size: 1rem;
+  color: black;
+}
+
+/* useful classes */
+
+.center {
+    text-align: center;
+}
+
 /*Footer Styles*/
 .footer{
     width: 100%;
@@ -1543,4 +1561,160 @@
 .dir-people{
     margin-left: 100px;
     margin-bottom: 50px;
+}
+
+
+
+
+
+/*Blog page styles*/
+
+.blog-content {
+    height: 100%;
+    width: 100%;
+    margin-top: 8vh;
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 13px;
+    padding-top: 1em;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1504&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    z-index: auto;
+}
+
+.blog::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 50%;
+}
+
+
+.blog h2 {
+    position: absolute;
+    margin: 10% auto 20px auto;
+    font-size: 5em;
+    color: white;
+    z-index: 3;
+}
+
+.faq-wrapper {
+    height: 150px;
+    background: #FAFAFA;
+}
+
+.faq {
+    height: 100%;
+    width: 70%;
+    background-image: url(https://images.unsplash.com/photo-1498262257252-c282316270bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80);
+    margin: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    /* font-family: 'Montserrat' , 'sans-serif'; */
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 14px;
+    /*panel text and FAQ header size*/
+    overflow: hidden;
+}
+
+.faq h2 {
+    font-size: 2.8em;
+    color: white;
+    text-align: center;
+}
+
+.faq button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: #345eeb;
+    color: white;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+}
+
+.tutor-box {
+    height: 100%;
+    width: 90%;
+    background-color: #eee;
+    margin: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.tutor-spotlight {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1519662978799-2f05096d3636?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80);
+    margin: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.spotlight-header h2{
+    font-size: 2.8em;
+    font-family: 'Poppins', 'sans-serif';
+    color: white;
+    text-align: center;
+}
+
+.postings {
+    height: 100%;
+    width: 90%;
+    background-color: #eee;
+    margin: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-family: 'Poppins', 'sans-serif';
 }
