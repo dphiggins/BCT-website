@@ -1464,25 +1464,25 @@
     flex-direction: column;
 }
 .person:nth-child(1) .headshot{
-    background-image: url(david.jpeg);
+    background-image: url(../img/david.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .person:nth-child(2) .headshot{
-    background-image: url(nathan.jpeg);
+    background-image: url(../img/nathan.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .person:nth-child(3) .headshot{
-    background-image: url(dan.jpeg);
+    background-image: url(../img/dan.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .person:nth-child(4) .headshot{
-    background-image: url(dylan.JPG);
+    background-image: url(../img/dylan.JPG);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
