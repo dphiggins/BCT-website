@@ -1533,6 +1533,7 @@
 .directory-content{
     font-size: 1em;
     font-family: 'Montserrat';
+    margin: 0 auto 50px auto;
 }
 .dir-title{
     font-size: 2em;
