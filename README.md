@@ -33,3 +33,5 @@ Below are a list of features we still need to add, in order of importance. Pleas
 	- Web Interface for Admins to easily manage tutors and tutees
 
 4. Add electronic signature under the Sign Up form (Unassigned)
+
+5. Add a contact page for email and social media. (Unassigned)
