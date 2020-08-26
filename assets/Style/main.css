@@ -1450,9 +1450,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-row-gap: 40px;
     justify-items: center;
     font-size: 16px;
+    margin-top: 100px;
 }
 .person{
     border: 1px solid black;
@@ -1463,25 +1464,25 @@
     flex-direction: column;
 }
 .person:nth-child(1) .headshot{
-    background-image: url(../img/david.jpeg);
+    background-image: url(david.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .person:nth-child(2) .headshot{
-    background-image: url(../img/nathan.jpeg);
+    background-image: url(nathan.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .person:nth-child(3) .headshot{
-    background-image: url(../img/dan.jpeg);
+    background-image: url(dan.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .person:nth-child(4) .headshot{
-    background-image: url(../img/dylan.JPG);
+    background-image: url(dylan.JPG);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1526,4 +1527,18 @@
 }
 .person p.bio-open{
     display: block;
+}
+
+.directory-content{
+    font-size: 1em;
+    font-family: 'Montserrat';
+}
+.dir-title{
+    font-size: 2em;
+    font-weight: 700;
+    margin: 50px;
+}
+.dir-people{
+    margin-left: 100px;
+    margin-bottom: 50px;
 }
