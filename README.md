@@ -18,7 +18,7 @@ Here's what you need to know to get started
 
 Below are a list of features we still need to add, in order of importance. Please feel free to get started on any open features.
 
-1. Update Team Page (Dylan)
+1. Update Team Page (Dylan) == DONE 
 	- Split team page into Senior Management and Directory
 	- Directory should have filters to select people in different roles
 
