@@ -35,3 +35,9 @@ Below are a list of features we still need to add, in order of importance. Pleas
 4. Add electronic signature under the Sign Up form (Unassigned)
 
 5. Add a contact page for email and social media. (Unassigned)
+
+6. Redesign the footer (Dylan)
+	- Add Dan
+	- Change color
+	- Rearrange existing items
+	- Add mission statement or description
