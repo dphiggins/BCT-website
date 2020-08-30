@@ -18,25 +18,27 @@ Here's what you need to know to get started
 
 Below are a list of features we still need to add, in order of importance. Please feel free to get started on any open features.
 
-1. Update Team Page (Dylan) == DONE 
-	- Split team page into Senior Management and Directory
-	- Directory should have filters to select people in different roles
+1. Add missing people to directory
+	- Connie (Others --> website assistant), Adrian (*not a tutor*, others --> enrichment course instructor), etc
+2. Update Team Page (Dan)
+	- Create dropdown of Senior management and Directory
+	- Directory needs colors, give some kind of decoration to each person's name (maybe a block)
 
-2. Create Locations tab and Naples Page (Unassigned)
+3. Create Locations tab and Naples Page (Unassigned)
 	- Naples and Boston (highlight Boston is our HQ)
 	- Tutees and Tutors in each location should sign up through different links and forms
 	- Might make most sense to add a drop down of locations under sign up and Volunteer for now
 
-3. Create Server Side database and logic for automation (Dan)
+4. Create Server Side database and logic for automation (Dan)
 	- Tutor and Tutee Database
 	- Automatic Tutee Assignment
 	- Web Interface for Admins to easily manage tutors and tutees
 
-4. Add electronic signature under the Sign Up form (Unassigned)
+5. Add electronic signature under the Sign Up form (Unassigned)
 
-5. Add a contact page for email and social media. (Unassigned)
+6. Add a contact page for email and social media. (Unassigned)
 
-6. Redesign the footer (Dylan)
+7. Redesign the footer (Dylan)
 	- Add Dan
 	- Change color
 	- Rearrange existing items
