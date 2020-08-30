@@ -1107,12 +1107,23 @@ figcaption {
     width: 90%;
     background: lightgrey;
     height: 3px;
-    margin: 100px auto 100px auto;
+    margin: 50px auto 25px auto;
 }
 .directory-content{
-    margin: 100px auto;
+    margin: 0 auto 50px auto;
 }
-
+.directory-content p{
+    margin-left: 50px;
+    line-height: 25px;
+}
+.checkboxes{
+    margin: 0 auto 25px 50px;
+    line-height: 30px;
+    font-weight: 500;
+}
+.dir-title{
+    
+}
 /*About Styles*/
 .abt-content-wrapper{
     height: 100%;
