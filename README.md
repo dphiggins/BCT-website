@@ -15,6 +15,7 @@ Here's what you need to know to get started
 - Pushing (or merging) to master will trigger a Github action that **automatically publishes the website**
 	- So please never do this unless your code has been reviewed and approved.
 - We have created a [template](https://github.com/dphiggins/BCT-website/blob/master/public/assets/template.html) for our webpages. Use this to get started easily.
+- Development is hosted on Github Pages through https://dphiggins.github.io/BCT-website/public/. The default link doesn't work since the root directory can't be set to "/public".
 
 Below are a list of features we still need to add, in order of importance. Please feel free to get started on any open features.
 
