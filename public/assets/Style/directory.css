@@ -2,7 +2,17 @@
     margin: 0 auto 50px auto;
     position:relative;
     max-width: 75%;
+    font-size: 1em;
+    font-family: 'Montserrat';
 }
+
+.dir-title{
+    font-size: 2em;
+    font-weight: 700;
+    margin: 50px;
+    text-align: center;
+}
+
 .directory-content p{
     margin-left: 50px;
     line-height: 25px;
@@ -89,6 +99,72 @@
   );
   height: 100%;
   width: 100%;
+}
+
+.ORANGE {
+    background: radial-gradient(
+      ellipse at center,
+      #FF9798 0%,
+      #FF9798 70%,
+      rgba(0, 128, 172, 0) 70.3%
+    );
+    height: 100%;
+    width: 100%;
+}
+
+.BLUE {
+  background: radial-gradient(
+    ellipse at center,
+    #97aeff 0%,
+    #97aeff 70%,
+    rgba(0, 128, 172, 0) 70.3%
+  );
+  height: 100%;
+  width: 100%;
+}
+
+.GREEN {
+    background: radial-gradient(
+      ellipse at center,
+      #97ffc0 0%,
+      #97ffc0 70%,
+      rgba(0, 128, 172, 0) 70.3%
+    );
+    height: 100%;
+    width: 100%;
+}
+
+.GOLD {
+    background: radial-gradient(
+      ellipse at center,
+      #fff47e 0%,
+      #fff47e 70%,
+      rgba(0, 128, 172, 0) 70.3%
+    );
+    height: 100%;
+    width: 100%;
+}
+
+.PURPLE {
+    background: radial-gradient(
+      ellipse at center,
+      #c197ff 0%,
+      #c197ff 70%,
+      rgba(0, 128, 172, 0) 70.3%
+    );
+    height: 100%;
+    width: 100%;
+}
+
+.GRAY {
+    background: radial-gradient(
+      ellipse at center,
+      #989898 0%,
+      #989898 70%,
+      rgba(0, 128, 172, 0) 70.3%
+    );
+    height: 100%;
+    width: 100%;
 }
 
 .team-name-wrapper {
