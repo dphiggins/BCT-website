@@ -305,6 +305,10 @@ figcaption {
     margin: 5px;
     background: black;
 }
+
+.mobile { /*don't show mobile elements on desktop*/
+    display: none;
+}
 @media screen and (max-width: 1150px){
     #sign-up{
         margin-left: 20px;
@@ -320,6 +324,9 @@ figcaption {
     }
 }
 @media screen and (max-width: 1000px){
+    .mobile { /*don't show mobile elements on desktop*/
+        display: block;
+    }
     body{
         overflow-x: hidden;
     }
@@ -346,6 +353,7 @@ figcaption {
     }
     .nav-links ul a{
         color: white;
+        word-spacing:0px;
     }
     #active{
         color: #FF5733;
@@ -360,6 +368,11 @@ figcaption {
     .burger div{
         display: block;
     }
+
+    .dropdown { /*Don't show dropdown on mobile*/
+        display: none;
+    }
+
     .dropdown-content{
         width: 150px;
         height: 73px;
