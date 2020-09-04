@@ -1111,19 +1111,14 @@ figcaption {
 }
 .directory-content{
     margin: 0 auto 50px auto;
+    position:relative;
+    max-width: 75%;
 }
 .directory-content p{
     margin-left: 50px;
     line-height: 25px;
 }
-.checkboxes{
-    margin: 0 auto 25px 50px;
-    line-height: 30px;
-    font-weight: 500;
-}
-.dir-title{
-    
-}
+
 /*About Styles*/
 .abt-content-wrapper{
     height: 100%;

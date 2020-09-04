@@ -23,7 +23,11 @@ Below are a list of features we still need to add, in order of importance. Pleas
 	- Connie (Others --> website assistant), Adrian (*not a tutor*, others --> enrichment course instructor), etc
 2. Update Team Page (Dan)
 	- Create dropdown of Senior management and Directory
-	- Directory needs colors, give some kind of decoration to each person's name (maybe a block)
+	- ~~Directory needs colors, give some kind of decoration to each person's name (maybe a block)~~
+		- Need to figure out the mininum margin for each block, and then use javascript to move blocks
+		- Add everyone in
+		- **Automate moving blocks**
+		- ~~See if animation is visible (just use transition and then change top and left px)~~
 
 3. Create Locations tab and Naples Page (Unassigned)
 	- Naples and Boston (highlight Boston is our HQ)

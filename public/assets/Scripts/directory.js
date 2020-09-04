@@ -43,13 +43,6 @@ var tutorFilter = false;
 var otherFilter = true;
 showAllSelectedCard() // Show page with the default setting above
 
-// change filter's boolean status when clicked, and also update the selected cards
-document.getElementById("outreach").addEventListener("click", () => {outreachFilter = !outreachFilter; showAllSelectedCard();});
-document.getElementById("marketing").addEventListener("click", () => {marketingFilter = !marketingFilter; showAllSelectedCard();});
-document.getElementById("hr").addEventListener("click", () => {hrFilter = !hrFilter; showAllSelectedCard();});
-document.getElementById("tutors").addEventListener("click", () => {tutorFilter = !tutorFilter; showAllSelectedCard();});
-document.getElementById("others").addEventListener("click", () => {otherFilter = !otherFilter; showAllSelectedCard();});
-
 
 /*-----Display Functions. TODO: Change innerHTML code to fit the design of the website. Add css formatting-----*/
 function showAllSelectedCard() {
@@ -65,12 +58,50 @@ function showAllSelectedCard() {
 			for (var tutorIndex in tutorsList) {
 				if (isValidName(tutorsList[tutorIndex], directoryOBJ)) {
 					showCard(tutorsList[tutorIndex], `name_${tutorIndex}`, directoryOBJ);
-				} else { // this doesn't work yet. fix it soon.
+				} else { 
 					document.getElementById(`name_${tutorIndex}`).innerHTML = "";
 				}
 			}
 		});
 	});
+}
+
+// make something like this: https://www.constructdigital.com/about/our-people (once we have all headshots)
+
+// fill each row until we can't (absolute, specify left and top pixels)
+// them move on to the next row
+
+// manually copy and past each box, but just javascript to put in name, img, title, and also position
+
+// Grid fiter --> filter box(flex column) (width changes based on media) --> quote, image, info
+
+// have css classes like "showquote" or "scaleimg" that you can apply with javascript
+
+function updatePage(filter) {
+	updateFilters(filter);
+	// TESTING
+	document.getElementById("AC").style.left = "0px";
+	document.getElementById("AC").style.top = "0px";
+	document.getElementById("DM").style.display= "hidden";
+}
+
+function updateFilters(filter) {
+	// pre: recieves a filter
+	// post: updates the active class on the selected filter
+	var filterList = ["ALL", "LEADERSHIP", "HR", "DEVELOPMENT", "MARKETING", "TECHNOLOGY", "OTHERS"];
+	for (var i in filterList) {
+		if (filter === filterList[i]) {
+			document.getElementById(filterList[i]).classList.add("filtr-active");
+		} else {
+			document.getElementById(filterList[i]).classList.remove("filtr-active");
+		}
+	}
+}
+
+function getValidCards(filter) {
+	// pre: recieves a filter
+	// post: returns a list of IDs of cards that match the filter
+	var cardList = ["DM", "NB", "DB", "DH", "AC", "AL", "BS", "BB", "CB", "CY", "DA", "GB", "JW", "NR", "SK", "TA"];
 }
 
 function isValidName(name, directoryOBJ) {

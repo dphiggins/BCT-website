@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/9cbf0b77ec.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="./../assets/img/logo.PNG">
     <link rel="stylesheet" href="./../assets/Style/main.css">
+    <link rel="stylesheet" href="./../assets/Style/directory.css">
    
 
 </head>
@@ -43,125 +44,159 @@
             <div class="line3"></div>
         </div>
     </div>
-
-    <div class="team-content-wrapper">
-	<div class="sen-mg">
-        <h1 id = "sen-mg-title">Senior Management</h1>
-        <li class="people">
-            <div class="person">
-                <div class="headshot"></div>
-                <div id = "name">David Min</div>
-                <div id = "position">Founder, CEO</div>
-                <div class = "bio-toggle">Bio</div>
-                <p class = "bio">David Min is a high school junior attending the Buckingham Browne & Nichols School in Cambridge, M.A. and is currently abroad attending the School for Ethics and Global Leadership in Washington, D.C. during the fall semester. As Founder and Chief Executive Officer of Boston COVID-Tutoring (BCT), David heads the operations of the organization and engages in the development of organizational ideas, objectives, projects while overseeing various departments of BCT’s Management Team and frequently communicating with BCT’s tutors and families. David founded this organization after coming to the realization that knowledge is truly one of the most powerful and influential aspects of one’s life. Having been inspired by his own experiences with tutoring, being tutored, and caring for his younger brother Jason, he sought to emphasize the relational and emotional aspects of tutoring, along with the academical ones. Through BCT’s service, David hopes that families and students will not only receive the educational experience they may need but also the opportunity to cultivate and develop a lasting relationship with their tutor. In his spare time, he enjoys playing the oboe, writing for his school newspaper, and spending time with his family. David hopes to truly make a positive impact in his community by providing this service to any children in need of tutoring—regardless of their background.</p>
-            </div>
-            <div class="person">
-                <div class="headshot"></div>
-                <div id = "name">Nathan Bornstein</div>
-                <div id = "position">COO</div>
-                <div class = "bio-toggle">Bio</div>
-                <p class = "bio">Nathan Bornstein is a high school Junior attending the Buckingham Browne and Nichols school in Cambridge, M.A. He is the Chief Operating Officer of the organization and works on day to day operations and new and exciting projects. Nathan helped start BCT with the hopes of helping kids with their education who have been struggling academically. In his free time, Nathan enjoys playing tennis and volunteering for BCT and the Immigrant Learning Center. In addition, Nathan enjoys helping others and wants to impact his community positively. Thank you for choosing BCT!</p>
-            </div>
-            <div class="person">
-                <div class="headshot"></div>
-                <div id = "name">Dan Bi</div>
-                <div id = "position">VP</div>
-                <div class = "bio-toggle">Bio</div>
-                <p class = "bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo molestiae corrupti numquam adipisci, odit dolorem quis doloribus nesciunt commodi? Accusantium sint adipisci labore possimus architecto veritatis pariatur nemo quisquam commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quaerat, reprehenderit facere et aspernatur dolores, voluptatem veritatis recusandae eligendi, odio fuga quia cumque sapiente excepturi aliquam molestiae dignissimos nesciunt voluptate adipisci. Velit, vel unde!</p>
-            </div>
-            <div class="person">
-                <div class="headshot"></div>
-                <div id = "name">Dylan Higgins</div>
-                <div id = "position">CTO</div>
-                <div class = "bio-toggle">Bio</div>
-                <p class = "bio">Dylan Higgins is a high school junior at the Buckingham Browne & Nichols School. He handles and/or oversees most of BCT's technology operations. He is also a tutor. Dylan plays soccer and runs track and is also an editor for his school newspaper. Dylan enjoys his work for BCT and wants to continue to help others and impact his community. </p>
-            </div>
-        </li>
-        
-    </div>
-
-    <script>
-        var bioToggles = document.getElementsByClassName('bio-toggle');
-        var cards = document.getElementsByClassName('person');
-        var bios = document.getElementsByClassName('bio');
-
-        //HARDCODED FOR NOW
-        bioToggles[0].addEventListener('click', () => {
-                bios[0].classList.toggle("bio-open");
-                cards[0].classList.toggle("bio-open");
-            });
-
-        bioToggles[1].addEventListener('click', () => {
-                bios[1].classList.toggle("bio-open");
-                cards[1].classList.toggle("bio-open");
-            });
-
-        bioToggles[2].addEventListener('click', () => {
-                bios[2].classList.toggle("bio-open");
-                cards[2].classList.toggle("bio-open");
-            });
-
-        bioToggles[3].addEventListener('click', () => {
-                bios[3].classList.toggle("bio-open");
-                cards[3].classList.toggle("bio-open");
-            });
-
-        //FIX THIS FOR THE FUTURE
-        /*for (var i = 0; i < cards.length; i++){
-            bioToggles[i].addEventListener('click', () => {
-                bios[i].classList.toggle("bio-open");
-                cards[i].classList.toggle("bio-open");
-            });
-        }
-        */
-    </script>
 	    
 	    
-	    <div id = "team-divider"></div>
-	    
-<div class="directory-content">
-    <div class="dir-title">Directory</div>
-    <div class="checkboxes">
-    	<input type="checkbox" id="outreach" name="outreachCheckBox" checked>
-  		<label for="outreachCheckBox"> Outreach </label><br>
-  		<input type="checkbox" id="marketing" name="marketingCheckBox" checked>
-  		<label for="marketingCheckBox"> Marketing </label><br>
-  		<input type="checkbox" id="hr" name="hrCheckBox" checked>
-  		<label for="hrCheckBox"> Human Resources </label><br>
-  		<input type="checkbox" id="tutors" name="tutorCheckBox">
-  		<label for="tutorCheckBox"> Tutors </label><br>
-    	<input type="checkbox" id="others" name="otherCheckBox" checked>
-        <label for="otherCheckBox"> Others </label><br>
-    </div>
+    <div id = "team-divider"></div>
+    
+    <div class="directory-content">
+        <div class="dir-title">Directory</div>
 
-  		<!--<script src="writeHTML.js"></script>-->
-  		<script>
-  			// Creating a list of HTML elements with id="name_#", where # goes from 0 to the number of names in the directory
-			
-			/* COME BACK TO THIS. NEED TO SOMEHOW GET DOCUMENT.WRITE() TO RUN BEFORE HTML LOADS
-			   IDEA: CONNECT THIS STRAIGHT TO FIREBASE SINCE WE'RE ONLY ASKING FOR LENGTH
-			var promise = axios.get('./../assets/data/tutorList.json') 
-			  .then(response => {
-				console.log("Getting tutorList data");
-				for (var i = 0; i < response.data.length; i++) {
-					document.write(`<p id="name_${i}"></p>`);
-				}
-			  })
-			  .catch(error => {
-				console.error(error);
-				return null;
-			  });
+        <div class="filter-nav-wrap">
+            <ul id="service-nav" class="simplefilter">
+                <li class="fltr-controls filtr-active" id="ALL" onclick="updatePage('ALL')">All</li>
 
-			do { // Need to pause the program while the file loads. Don't want to use document.write() after HTML finishes loading.
-				var x = null;
-			} while (!promise.finally(() => {return 1;}));*/
+                <li class="fltr-controls " id="LEADERSHIP" onclick="updatePage('LEADERSHIP')">SENIOR MANAGEMENT</li>
 
-			for (var i = 0; i < 80; i++) { // hardcoding number of tutors: TODO: Change it
-					document.write(`<p id="name_${i}"></p>`);
-			}
-  		</script>
-	   
-</div>
+                <li class="fltr-controls " id="HR" onclick="updatePage('HR')">HUMAN RESOURCES</li>
+
+                <li class="fltr-controls " id="DEVELOPMENT" onclick="updatePage('DEVELOPMENT')">DEVELOPMENT</li>
+
+                <li class="fltr-controls " id="MARKETING" onclick="updatePage('MARKETING')">MARKETING</li>
+
+                <li class="fltr-controls " id="TECHNOLOGY" onclick="updatePage('TECHNOLOGY')">TECHNOLOGY</li>
+
+                <li class="fltr-controls " id="OTHERS" onclick="updatePage('OTHERS')">OTHERS</li>
+
+            </ul>
+        </div>
+        <div class="grid-filter" style="position:relative; height:700px">
+            <div id="DM" class="filter-box filtr-item  LEADERSHIP " style="position:absolute; left:0px; top:0px;">
+                
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info">
+                        <div class="team-name-wrapper">
+                            <p>David Min</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>Chief Executive Officer Founder</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">BB&amp;N</span>
+                  <span class="team-grade">Junior</span>
+                </div>
+            </div>
+            <div id="NB"class="filter-box filtr-item  LEADERSHIP " style="position:absolute; left:260px; top:0px;">
+                
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info">
+                        <div class="team-name-wrapper">
+                            <p>Nathan Bornstein</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>Chief Operating Officer</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">BB&amp;N</span>
+                  <span class="team-grade">Junior</span>
+                </div>
+            </div>
+            <div id="DB" class="filter-box filtr-item  LEADERSHIP " style="position:absolute; left:520px; top:0px;">
+                
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info">
+                        <div class="team-name-wrapper">
+                            <p>Dan Bi</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>Chief Technology Officer</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">BB&amp;N</span>
+                  <span class="team-grade">Junior</span>
+                </div>
+            </div>
+            <div id="DH" class="filter-box filtr-item  LEADERSHIP " style="position:absolute; left:780px; top:0px;">
+                
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info">
+                        <div class="team-name-wrapper">
+                            <p>Dylan Higgins</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>WebTeam Member</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">BB&amp;N</span>
+                  <span class="team-grade">Junior</span>
+                </div>
+            </div>
+            <div id="AC" class="filter-box filtr-item  LEADERSHIP " style="position:absolute; left:0px; top:300px;">
+                
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info">
+                        <div class="team-name-wrapper">
+                            <p>Abby Chen</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>Co-Director of Human Resources</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">BB&amp;N</span>
+                  <span class="team-grade">Junior</span>
+                </div>
+            </div>
+            <div id="AL" class="filter-box filtr-item  LEADERSHIP " style="position:absolute; left:260px; top:300px;">
+                
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info">
+                        <div class="team-name-wrapper">
+                            <p>Ava Levinson</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>Director of Social Media</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">BB&amp;N</span>
+                  <span class="team-grade">Senior</span>
+                </div>
+            </div>
+            <div id="BS" class="filter-box filtr-item  LEADERSHIP " style="position:absolute; left:520px; top:300px;">
+                
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info">
+                        <div class="team-name-wrapper">
+                            <p>Bea Scanlon</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>Director of Social Media</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">BB&amp;N</span>
+                  <span class="team-grade">Senior</span>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="footer">
