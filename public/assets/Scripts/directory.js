@@ -13,7 +13,7 @@ measurementId: "G-JT2D4NZ9RQ"
 firebase.initializeApp(firebaseConfig);
 
 var grid = document.getElementById("grid");
-var allCards = ["DM", "NB", "DB", "DH", "AC", "AR", "AM", "AL", "BS", "BB", "CY", "CB", "GB", "JW", "NR", "SK", "TA"];
+var allCards = ["DM", "NB", "DB", "DH", "AC", "AL", "BS", "BB", "CY", "GB", "CB", "JW", "LL", "NR", "SK", "TA", "AR", "AM", "FA"];
 
 updatePage("ALL"); // default to All filter
 
