@@ -397,9 +397,20 @@ figcaption {
     .dropdown.activate-drop .dropdown-content{
         display: block;
     }
-   
 
 }
+@media screen and (max-width:480px) {
+    .nav-links ul a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .nav-links ul a {
+        font-size: 10px;
+    }
+}
+
 .nav-links ul.open{
     transform: translateX(0%);
 }
