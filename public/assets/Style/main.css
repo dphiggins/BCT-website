@@ -1550,7 +1550,7 @@ figcaption {
 
 .enr{
     width: 90%;
-    height: 900px;
+    height: 1300px;
     margin: 50px auto 50px auto;
     border: 3px solid black;
     font-family: 'Poppins';
@@ -1604,6 +1604,17 @@ figcaption {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.enr-c-img2{
+    background: url("https://images.unsplash.com/photo-1583752028088-91e3e9880b46?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80");
+    height: 15em;
+    width: 80%;
+    justify-self: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .enr-c-info a{
     text-decoration: none;
     color: #17A589;
