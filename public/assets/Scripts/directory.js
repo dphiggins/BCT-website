@@ -13,7 +13,7 @@ measurementId: "G-JT2D4NZ9RQ"
 firebase.initializeApp(firebaseConfig);
 
 var grid = document.getElementById("grid");
-var allCards = ["DM", "NB", "DB", "DH", "AC", "AL", "BS", "BB", "CY", "GB", "CB", "JW", "LL", "NR", "SK", "TA", "AR", "AM", "FA"];
+var allCards = ["DM", "NB", "DB", "AC", "AL", "BS", "BB", "CY", "DH", "GB", "CB", "JW", "LL", "NR", "SK", "TA", "AR", "AM", "FA"];
 
 updatePage("ALL"); // default to All filter
 
@@ -30,7 +30,7 @@ function updatePage(filter) {
 function updateFilters(filter) {
 	// pre: recieves a filter
 	// post: updates the active class on the selected filter
-	var filterList = ["ALL", "LEADERSHIP", "HR", "DEVELOPMENT", "MARKETING", "TECHNOLOGY", "OTHERS"];
+	var filterList = ["ALL", "LEADERSHIP", "HR", "DEVELOPMENT", "OUTREACH", "MARKETING", "TECHNOLOGY", "OTHERS"];
 	for (var i in filterList) {
 		if (filter === filterList[i]) {
 			document.getElementById(filterList[i]).classList.add("filtr-active");

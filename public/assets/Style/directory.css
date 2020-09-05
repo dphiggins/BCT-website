@@ -123,6 +123,17 @@
   width: 100%;
 }
 
+.LIGHTBLUE {
+  background: radial-gradient(
+    ellipse at center,
+    #7edbff 0%,
+    #7edbff 70%,
+    rgba(0, 128, 172, 0) 70.3%
+  );
+  height: 100%;
+  width: 100%;
+}
+
 .GREEN {
     background: radial-gradient(
       ellipse at center,
