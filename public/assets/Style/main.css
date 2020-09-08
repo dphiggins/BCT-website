@@ -7,11 +7,13 @@
 
 figure {
     text-align:center;
-    margin: autopx;
+    margin: 10 px;
+    vertical-align: top;
+    display: inline-block;
 }
 
 figcaption {
-  font-size: 0.5rem;
+  font-size: 0.9rem;
   color: #7a7a7a;
 }
 
@@ -1896,4 +1898,13 @@ figcaption {
     margin-left: auto;
     text-align: center;
     font-family: 'Poppins', 'sans-serif';
+}
+
+.video {
+    display: block;
+}
+    
+.testImages {
+    display: inline-flex;
+    margin: 0 2.5%;
 }
