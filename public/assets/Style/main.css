@@ -796,9 +796,158 @@ figcaption {
         font-size: 12px;
     }
 }
+/*Cambridge Day*/
+.cambridgeday-container{
+    width: 90%;
+	height:150px;
+    background: #E5E7E9;
+    margin: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Montserrat' , 'sans-serif';
+    font-size: 20px;
+}
 
+.cambridgeday-img{
+    margin-left: 10px;
+	height:100%;
+}
+
+.cambridgeday-container .cambridgeday-img img {
+	width:100%;
+	margin:auto;
+}
+
+@media screen and (max-width: 1400px){
+	.cambridgeday-container .cambridgeday-img img {
+		margin-top:10px;
+	}
+}
+
+@media screen and (max-width: 1250px){
+	.cambridgeday-container .cambridgeday-img img {
+		margin-top:20px;
+	}
+}
+
+@media screen and (max-width: 1150px){
+	.cambridgeday-container .cambridgeday-img img {
+		margin-top:30px;
+	}
+}
+
+.cambridgeday{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    font-size: 13px;
+}
+.cambridgeday-p{
+    height: 90%;
+	margin-top: 10px;
+	position:relative;
+}
+
+@media screen and (min-width: 1293px){
+	.cambridgeday-p{
+		margin-top:30px;
+	}
+}
+
+.cambridgeday-p p{
+	height:100%;
+    margin: 0px 20px 20px 20px;
+    font-size: 1em;
+    line-height: 200%;
+	top:25%;
+	position:absolute;
+	overflow: hidden;
+	word-wrap: break-word;
+}
+.cambridgeday-p a{
+    text-decoration: none;
+    color: #345eeb;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+    border-bottom: 2px solid transparent;
+}
+.cambridgeday-p a:hover{
+    border-bottom: 2px solid #FF5733;
+}
+@media screen and (max-width: 1105px){
+	.cambridgeday-p p{
+		margin: 0px 20px 20px 20px;
+		font-size: 0.9em;
+		top:25%;
+		position:absolute;
+	}
+}
+
+@media screen and (max-width: 849px){
+	
+	.cambridgeday-container{
+		height:300px;
+	}
+	.cambridgeday-p p{
+		margin: auto;
+		font-size: 2em;
+		width:100%;
+		position:relative;
+		overflow:visible;
+		text-align:center;
+	}
+	.cambridgeday-p{
+		margin: auto;
+		width:90%;
+		position:relative;
+	}
+	.cambridgeday-img{
+		width:90%;
+        margin: auto;
+		margin-top: 30px;
+    }
+	
+	.cambridgeday-container .cambridgeday-img img {
+		margin-top:0px;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.cambridgeday-p p{
+		font-size: 1.8em;
+	}
+}
+
+@media screen and (max-width: 621px){
+	.cambridgeday-p p{
+		font-size: 1.6em;
+	}
+}
+
+
+@media screen and (min-width: 850px){ /*This is where I decide the ordering of the pictures and texts*/
+
+    .cambridgeday{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "subj-info ilc-img";
+        font-size: 16px;
+    }
+    .cambridgeday-p{
+        grid-area: subj-info;
+        align-self: center;
+        margin-left: 50px;
+    }
+    .cambridgeday-img{
+        margin: 30px 50px 0px 20px;
+    }
+}
+
+/*ILC*/
 .ilc-container{
-    height: 60vh;
     width: 90%;
     background: #E5E7E9;
     margin: 40px;
@@ -808,20 +957,14 @@ figcaption {
     font-size: 20px;
 }
 
-.ilc-info{
-    height: 50%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+.ilc-img{
+    margin-left: 10px;
+	height:100%;
 }
 
-.ilc-img{
-    margin: 10px 20px 10px 20px;
-    background-image: url(../img/ILC.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.ilc-container .ilc-img img {
+	width:100%;
+	
 }
 
 @media screen and (min-width: 450px){
@@ -831,21 +974,30 @@ figcaption {
 }
 
 .ilc{
-    height: 85%;
+    height: 100%;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
     font-size: 13px;
 }
 .ilc-p{
     height: 50%;
+	margin-top: 25%;
+	margin-bottom: 25%;
+	margin-left: 50px;
+	position:relative;
 }
 
 .ilc-p p{
+	height:100%;
     margin: 0px 20px 20px 20px;
     font-size: 1em;
     line-height: 200%;
+	top:25%;
+	position:absolute;
+	overflow: hidden;
+	word-wrap: break-word;
 }
 .ilc-p a{
     text-decoration: none;
@@ -857,7 +1009,73 @@ figcaption {
 .ilc-p a:hover{
     border-bottom: 2px solid #FF5733;
 }
-@media screen and (min-width: 850px){
+@media screen and (max-width: 1105px){
+	.ilc-p p{
+		margin: 0px 20px 20px 20px;
+		font-size: 0.9em;
+		top:25%;
+		position:absolute;
+	}
+}
+
+@media screen and (max-width: 1020px){
+	.ilc-p p{
+		font-size: 0.7em;
+	}
+}
+
+@media screen and (max-width: 849px){
+	.ilc-p p{
+		margin: auto;
+		font-size: 2em;
+		width:100%;
+		position:relative;
+		overflow:visible;
+		text-align:center;
+	}
+	.ilc-p{
+		margin: auto;
+		width:100%;
+		position:relative;
+	}
+	.ilc-img{
+		width:90%;
+        margin: auto;
+		margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 800px){
+	.ilc-p p{
+		font-size: 1.8em;
+	}
+}
+
+@media screen and (max-width: 710px){
+	.ilc-p p{
+		font-size: 1.6em;
+	}
+}
+
+@media screen and (max-width: 610px){
+	.ilc-p p{
+		font-size: 1.4em;
+	}
+}
+
+@media screen and (max-width: 520px){
+	.ilc-p p{
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (max-width: 480px){
+	.ilc-p p{
+		font-size: 1em;
+	}
+}
+
+@media screen and (min-width: 850px){ /*This is where I decide the ordering of the pictures and texts*/
     .m-s-info{
         font-size: 20px;
     }
@@ -873,10 +1091,9 @@ figcaption {
         grid-area: subj-info;
         align-self: center;
         margin-left: 50px;
-        margin-top: 70px;
     }
     .ilc-img{
-        margin: 60px 50px 0px 20px;
+        margin: 30px 50px 0px 20px;
     }
 }
 
