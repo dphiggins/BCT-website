@@ -45,7 +45,7 @@ function getValidCards(filter) {
 	// post: returns a list of IDs of cards that match the filter
 	var cardList = [];
 	for (var i in allCards) {
-		if (document.getElementById(allCards[i]).classList.contains(filter)) {
+		if (document.getElementById(allCards[i]).classList.contains(filter) && !document.getElementById(allCards[i]).classList.contains("HIDDEN")) {
 			cardList.push(allCards[i]);
 		}
 	}
