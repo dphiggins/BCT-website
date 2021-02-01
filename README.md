@@ -19,8 +19,14 @@ Here's what you need to know to get started
 
 Below are a list of features we still need to add, in order of importance. Please feel free to get started on any open features.
 
-1. Add missing people to directory
-	- Connie (Others --> website assistant), Adrian (*not a tutor*, others --> enrichment course instructor), etc
+1. Small Updates
+	- Change Graham to Gold color
+	- Add Julia Torrey HR, Milton Academy, Sophomore
+	- Enrichment course --> change to 0. (say under Buisness class "no longer available for registration")
+	- Move QnA to about page
+	- About page img4 not working
+	- Change all "Greater Boston" phrase to "Massachusetts"
+
 2. Update Team Page (Dan)
 	- Create dropdown of Senior management and Directory
 	- ~~Directory needs colors, give some kind of decoration to each person's name (maybe a block)~~
