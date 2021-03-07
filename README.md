@@ -20,8 +20,10 @@ Here's what you need to know to get started
 Below are a list of features we still need to add, in order of importance. Please feel free to get started on any open features.
 
 1. Small Updates
+	- Change "senior management" to "senior leadership"
+	- Update David's Bio. 
 	- Change Graham to Gold color
-	- Add Julia Torrey HR, Milton Academy, Sophomore
+	- Add Julia Torrey HR, Milton Academy, Sophomore. Emma Tung - junior Milton Academy, Outreach. Jeremy Hwang - junior Milton Academy, Development. Conrad Brown - junior Milton Academy, Development
 	- Enrichment course --> change to 0. (say under Buisness class "no longer available for registration")
 	- Move QnA to about page
 	- About page img4 not working
@@ -48,6 +50,7 @@ Below are a list of features we still need to add, in order of importance. Pleas
 5. Add electronic signature under the Sign Up form (Unassigned)
 
 6. Add a contact page for email and social media. (Unassigned)
+
 
 7. Redesign the footer (Dylan)
 	- Add Dan
