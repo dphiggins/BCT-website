@@ -25,7 +25,7 @@ Below are a list of features we still need to add, in order of importance. Pleas
 	- Change Graham to Gold color
 	- Add Julia Torrey HR, Milton Academy, Sophomore. Emma Tung - junior Milton Academy, Outreach. Jeremy Hwang - junior Milton Academy, Development. Conrad Brown - junior Milton Academy, Development
 	- Enrichment course --> change to 0. (say under Buisness class "no longer available for registration")
-	- Move QnA to about page
+	- Move QnA to about page (a drop down from about page) Also make sure to have about page included in the drop down.
 	- About page img4 not working
 	- Change all "Greater Boston" phrase to "Massachusetts"
 
