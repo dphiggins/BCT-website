@@ -13,7 +13,8 @@ measurementId: "G-JT2D4NZ9RQ"
 firebase.initializeApp(firebaseConfig);
 
 var grid = document.getElementById("grid");
-var allCards = ["DM", "NB", "DB", "AC", "AL", "BS", "BB", "CY", "DH", "GB", "CB", "JW", "LL", "NR", "SK", "TA", "AR", "AM", "FA"];
+//var allCards = ["DM", "NB", "DB", "AC", "AL", "BS", "BB", "CY", "DH", "GB", "CB", "JW", "LL", "NR", "SK", "TA", "AR", "AM", "FA"];
+var allCards = ["DM", "NB", "DB", "AC", "AL", "BS", "BB", "CB", "CY", "DH", "ET", "GB", "CB", "JH", "JT", "JW", "LL", "NR", "SK", "TA", "AR", "AM", "FA"];
 
 updatePage("ALL"); // default to All filter
 
@@ -44,7 +45,7 @@ function getValidCards(filter) {
 	// pre: recieves a filter
 	// post: returns a list of IDs of cards that match the filter
 	var cardList = [];
-	for (var i in allCards) {
+	for (var i in allCards) { // this for loop also sorts all the cards in the order they are in "allCards"
 		if (document.getElementById(allCards[i]).classList.contains(filter) && !document.getElementById(allCards[i]).classList.contains("HIDDEN")) {
 			cardList.push(allCards[i]);
 		}
