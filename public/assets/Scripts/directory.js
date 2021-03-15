@@ -13,8 +13,9 @@ measurementId: "G-JT2D4NZ9RQ"
 firebase.initializeApp(firebaseConfig);
 
 var grid = document.getElementById("grid");
-//var allCards = ["DM", "NB", "DB", "AC", "AL", "BS", "BB", "CY", "DH", "GB", "CB", "JW", "LL", "NR", "SK", "TA", "AR", "AM", "FA"];
-var allCards = ["DM", "NB", "DB", "AC", "AL", "BS", "BB", "CB", "CY", "DH", "ET", "GB", "CB", "JH", "JT", "JW", "LL", "NR", "SK", "TA", "AR", "AM", "FA"];
+
+var allCards = ["DM", "NB", "DB", "AC", "AL", "BS", "BB", "CBR", "CY", "DH", "ET", "GB", "CB", "JH", "JT", "JW", "LL", "NR", "SK", "TA", "AR", "AM", "FA"];
+//If initials repeat, simply include the second letter of their last name (and so on).
 
 updatePage("ALL"); // default to All filter
 
