@@ -20,10 +20,10 @@ Here's what you need to know to get started
 Below are a list of features we still need to add, in order of importance. Please feel free to get started on any open features.
 
 1. Small Updates
-	- Enrichment course --> change to 0. (say under Buisness class "no longer available for registration")
-	- Move QnA to about page (a drop down from about page) Also make sure to have about page included in the drop down.
-	- About page img4 not working
-	- Change all "Greater Boston" phrase to "Massachusetts"erw
+	- (Nina) Enrichment course --> change to 0. (say under Buisness class "no longer available for registration")
+	- (Peter) Move QnA to about page (a drop down from about page) Also make sure to have about page included in the drop down.
+	- (Nina) About page img4 not working
+	- (Nina) Change all "Greater Boston" phrase to "Massachusetts"erw
 
 2. Update Team Page (Dan)
 	- Create dropdown of Senior management and Directory
