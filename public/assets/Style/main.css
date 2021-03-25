@@ -33,92 +33,85 @@ figcaption {
 
 /*Footer Styles*/
 .footer{
+    height: auto;
+    width: 90%;
+    margin: 50px auto 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-top: 2px solid lightgrey;
+    padding: 20px;
+    font-family: europa, sans-serif;
+}
+.social{
+    margin: 30px 0 0 0;
     width: 100%;
-    height: 300px;
-    background: hsl(0, 0%, 0%);
-    font-family: 'Montserrat' , sans-serif;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    color: white;
-    font-size: 16px;
-}
-.copyright{
-    text-align: center;
-    margin: 20px;
-}
-.created{
-    text-align: center;
-    margin: 20px;
-}
-.socials{
-    margin-right: auto;
-    margin-left: auto;
-    font-size: 1.5em;
-}
-.f-divider{
-    width: 70%;
-    margin: 10px auto 10px auto;
-    height: 2px;
-    background: grey;
+    font-size: 1.75em;
+    display: flex;
+    justify-content: space-around;
 }
 #gmail{
-    margin: 10px;
-    color: white;
-    transition: all .5s ease-in-out;
-}
-#insta{
-    margin: 10px;
-    color: white;
-    transition: all .5s ease-in-out;
-}
-#facebook{
-    margin: 10px;
-    color: white;
-    transition: all .3s ease-in-out;
+    color: grey;
+    transition: all .3s;
 }
 #gmail:hover{
-    transform: rotate(360deg);
-    color: red;
+    color: black;
+}
+#insta{
+    color: grey;
+    transition: all .3s;
 }
 #insta:hover{
-    transform: rotate(360deg);
-    color: #FF00FF;
+    color: black;
+}
+#facebook{
+    color: grey;
+    transition: all .3s;
 }
 #facebook:hover{
-    transform: rotate(360deg);
-    color: #345eeb;
+    color: black;
 }
-@media screen and (min-width: 900px){
-    .footer{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        "copyright created"
-        "socials socials";
-    }
-    .copyright{
-        grid-area: copyright;
-        justify-self: left;
-    }
-    .created{
-        grid-area: created;
-        justify-self: right;
-    }
-    .socials{
-        grid-area: socials;
-        justify-self: left;
-    }
-    .f-divider{
-        display: none;
-    }
-
+.get-involved{
+    margin: 50px 0 20px 0;
+    font-size: 1em;
+    font-weight: 300;
+}
+.involve-btns{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    color: black;
+}
+.enroll{
+    margin: 0 15% 0 0;
+    border-bottom: 2px solid black;
+    padding: 5px;
+}
+#enroll{
+    text-decoration: none;
+    color: black;
+    margin: 0 15% 0 0;
+    border-bottom: 2px solid #FF5733;
+    padding: 5px;
+}
+#volunteer{
+    text-decoration: none;
+    color: black;
+    margin: 0 0 0 15%;
+    border-bottom: 2px solid #FF5733;
+    padding: 5px;
 }
 
-
-
-
+#footer-logo{
+    margin: 30px 0 0 0;
+}
+.copyright{
+    margin: 20px 0 0 0;
+}
+.created{
+    margin: 8px 0 0 0;
+}
 
 
 /*Navigation Styles*/
