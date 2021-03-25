@@ -1914,7 +1914,7 @@ figcaption {
     background-position: center;
 }
 .person:nth-child(4) .headshot{
-    background-image: url(../img/graham.png);
+    background-image: url(../img/graham.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
