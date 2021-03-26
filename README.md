@@ -49,7 +49,5 @@ Below are a list of features we still need to add, in order of importance. Pleas
 
 
 7. Redesign the footer (Dylan)
-	- Add Dan
-	- Change color
-	- Rearrange existing items
-	- Add mission statement or description
+	- Add Peter + Nina
+	- Add mission statement or description?
