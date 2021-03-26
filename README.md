@@ -19,12 +19,12 @@ Here's what you need to know to get started
 
 Below are a list of features we still need to add, in order of importance. Please feel free to get started on any open features.
 
-###Urgent Updates
+### Urgent Updates
 
 All Done! (for now)
 
 
-###Non-urgent Updates
+### Non-urgent Updates
 
 3. Create Server Side database and logic for automation (Dan)
 	- Tutor and Tutee Database
