@@ -19,35 +19,19 @@ Here's what you need to know to get started
 
 Below are a list of features we still need to add, in order of importance. Please feel free to get started on any open features.
 
-1. Small Updates
-	- (Nina) Enrichment course --> change to 0. (say under Buisness class "no longer available for registration")
-	- (Peter) Move QnA to about page (a drop down from about page) Also make sure to have about page included in the drop down.
-	- (Nina) About page img4 not working
-	- (Nina) Change all "Greater Boston" phrase to "Massachusetts"erw
+###Urgent Updates
 
-2. Update Team Page (Dan)
-	- Create dropdown of Senior management and Directory
-	- ~~Directory needs colors, give some kind of decoration to each person's name (maybe a block)~~
-		- Need to figure out the mininum margin for each block, and then use javascript to move blocks
-		- Add everyone in
-		- **Automate moving blocks**
-		- ~~See if animation is visible (just use transition and then change top and left px)~~
+All Done! (for now)
 
-3. Create Locations tab and Naples Page (Unassigned)
-	- Naples and Boston (highlight Boston is our HQ)
-	- Tutees and Tutors in each location should sign up through different links and forms
-	- Might make most sense to add a drop down of locations under sign up and Volunteer for now
 
-4. Create Server Side database and logic for automation (Dan)
+###Non-urgent Updates
+
+3. Create Server Side database and logic for automation (Dan)
 	- Tutor and Tutee Database
 	- Automatic Tutee Assignment
 	- Web Interface for Admins to easily manage tutors and tutees
 
-5. Add electronic signature under the Sign Up form (Unassigned)
+4. Add electronic signature under the Sign Up form (Unassigned)
 
-6. Add a contact page for email and social media. (Unassigned)
+5. Add a contact page for email and social media. (Unassigned)
 
-
-7. Redesign the footer (Dylan)
-	- Add Peter + Nina
-	- Add mission statement or description?
