@@ -1907,7 +1907,7 @@ figcaption {
     background-position: center;
 }
 .person:nth-child(4) .headshot{
-    background-image: url(../img/graham.png);
+    background-image: url(../img/graham.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -2003,29 +2003,33 @@ figcaption {
         font-size: 3em;
     }
 }
+
 .faq-wrapper {
     height: 150px;
     background: #FAFAFA;
 }
 
-.faq {
-    height: 100%;
-    width: 90%;
+.faq-header {
     background-image: url(https://images.unsplash.com/photo-1498262257252-c282316270bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80);
-    margin: 40px;
-    margin-right: auto;
-    margin-left: auto;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.faq-header h2 {
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 2.8em;
+    color: white;
+    text-align: center;
+}
+
+.faq {
+    width: 90%;
+    margin: 40px auto;
     /* font-family: 'Montserrat' , 'sans-serif'; */
     font-family: 'Poppins', 'sans-serif';
     font-size: 14px;
     /*panel text and FAQ header size*/
     overflow: hidden;
-}
-
-.faq h2 {
-    font-size: 2.8em;
-    color: white;
-    text-align: center;
 }
 
 .faq button {
@@ -2043,6 +2047,8 @@ figcaption {
     border: none;
     outline: none;
     transition: 0.4s;
+
+    border-radius: 0px;
 }
 
 .active,
@@ -2053,7 +2059,7 @@ figcaption {
 
 .panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: #FAFAFA;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
