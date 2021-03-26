@@ -213,11 +213,11 @@ figcaption {
     transform-origin: left;
     transition: all .3s ease-in-out;
 }
-#active{
-    border-bottom: 2px solid 
-    #FF5733;
-    color: black;
+.active{
+    border-bottom: 2px solid #FF5733 !important;
+    color: black !important;
 }
+
 .nav-links ul a:hover::after{
     transform: scaleX(1);
     transform-origin: right;
@@ -350,8 +350,8 @@ figcaption {
         color: white;
         word-spacing:0px;
     }
-    #active{
-        color: #FF5733;
+    .active{
+        color: #FF5733 !important;
     }
     .nav-links ul a:hover{
         color: #FF5733;
@@ -2051,7 +2051,7 @@ figcaption {
     border-radius: 0px;
 }
 
-.active,
+.activefaq,
 .accordion:hover {
     background-color: #345eeb;
     color: white;
@@ -2073,7 +2073,7 @@ figcaption {
     margin-left: 5px;
 }
 
-.active:after {
+.activefaq:after {
     content: "\2796";
 }
 
