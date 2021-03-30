@@ -1940,6 +1940,12 @@ figcaption {
     display: flex;
     flex-direction: column;
 }
+.mediaarticle:nth-child(1) .pressphoto{
+    background-image: url(https://www.cambridgeday.com/public_html/wp-content/uploads/2020/09/091320fi-BCT.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 #titleMedia{
     font-weight: 700;
     font-size: 1.5em;
