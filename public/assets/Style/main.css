@@ -1918,18 +1918,12 @@ figcaption {
     background-position: center;
 }
 .person:nth-child(2) .headshot{
-    background-image: url(../img/nathan.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.person:nth-child(3) .headshot{
     background-image: url(../img/dan.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.person:nth-child(4) .headshot{
+.person:nth-child(3) .headshot{
     background-image: url(../img/graham.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
