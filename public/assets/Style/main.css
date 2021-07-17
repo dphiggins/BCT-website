@@ -1946,6 +1946,12 @@ figcaption {
     background-repeat: no-repeat;
     background-position: center;
 }
+.mediaarticle:nth-child(1) .pressphoto1{
+    background-image: url(https://www.bostonherald.com/wp-content/uploads/2021/07/Tutorsmcs001.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 #titleMedia{
     font-weight: 700;
     font-size: 1.5em;
