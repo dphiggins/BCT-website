@@ -1940,6 +1940,41 @@ figcaption {
     margin: 20px 0 0 0;
     align-self: center;
 }
+.media{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+    justify-items: center;
+    font-size: 16px;
+    margin-top: 100px;
+}
+.mediaarticle{
+    border: 1px solid black;
+    width: 350px;
+    height: 450px;
+    background: #FBFCFC;
+    display: flex;
+    flex-direction: column;
+}
+.mediaarticle:nth-child(1) .pressphoto{
+    background-image: url(https://www.cambridgeday.com/public_html/wp-content/uploads/2020/09/091320fi-BCT.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.mediaarticle:nth-child(1) .pressphoto1{
+    background-image: url(https://www.bostonherald.com/wp-content/uploads/2021/07/Tutorsmcs001.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#titleMedia{
+    font-weight: 700;
+    font-size: 1.5em;
+    margin: 20px 0 0 0;
+    align-self: center;
+}
 #position{
     align-self: center;
     font-weight: 500;
