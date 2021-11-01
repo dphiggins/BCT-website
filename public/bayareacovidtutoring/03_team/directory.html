@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team | Bay Area COVID-Tutoring</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+    <script src="https://kit.fontawesome.com/9cbf0b77ec.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="./../assets/img/logo.PNG">
+    <script src="./../assets/dependencies/css-element-queries-1.2.1/src/ResizeSensor.js"></script> <!--http://marcj.github.io/css-element-queries/-->
+    <script src="./../assets/dependencies/css-element-queries-1.2.1/src/ElementQueries.js"></script>
+    <link rel="stylesheet" href="./../assets/Style/main.css">
+    <link rel="stylesheet" href="./../assets/Style/directory.css">
+   
+
+</head>
+<body>
+	<!-- Adding Axios for API requests -->
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <div class="nav">
+        <div class="logo">
+            <a href="./../index.html"><img src="./../assets/img/logo.PNG" alt="BCT Logo" width="38" height="37" class="vertical-center"></a>
+            <a href="./../index.html" style="margin-left: 50px"> BayAreaCOVID-Tutoring</a>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <a href="./../index.html">Home</a>
+                <a href="./../01_about/index.html">About</a>
+                <a href="./../02_subjects/index.html">Subjects</a>
+                <!--<div class="dropdown">
+                    <a href="./../03_team/execs.html" id="active">Team</a>
+                    <div class="dropdown-content">
+                          <a href="./../03_team/execs.html">Senior Leadership</a>
+                          <a href="./../03_team/directory.html">Team</a>
+                    </div>
+                </div>
+                <a href="./../03_team/execs.html" class="mobile">Senior Leadership</a>
+                <a href="./../03_team/directory.html" class="mobile">Team</a>-->
+                <a href="./../03_team/execs.html">Leadership</a>
+
+                <a href="./../04_volunteer/index.html">Volunteer</a>
+                <!--<a href="./../06_blog/index.html">Blog</a> Active means the tag is underlines
+
+                <a href="https://www.gofundme.com/f/raising-money-to-put-towards-improving-tutoring?utm_source=customer&utm_medium=copy_link&utm_campaign=p_cf+share-flow-1">Donate</a>
+                -->
+
+                <div class="dropdown">
+                    <a href="#" onclick="return false;">Locations</a>
+                    <div class="dropdown-content">
+                          <a target="_blank" rel="noopener noreferrer" href="https://bostoncovidtutoring.us/">Boston</a>
+                          <a target="_blank" rel="noopener noreferrer" href="https://bayareacovidtutoring.us/">California Bay Area</a>
+                    </div>
+                </div>
+                <a class="mobile" target="_blank" rel="noopener noreferrer" href="https://bostoncovidtutoring.us/">Boston</a>
+                <a class="mobile" target="_blank" rel="noopener noreferrer" href="https://bayareacovidtutoring.us/">California Bay Area</a>
+                
+                <a href="./../05_signup/index.html" id="sign-up">Sign Up</a>
+                
+            </ul>
+            
+        </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </div>
+	    
+	    
+    <div id = "team-divider"></div>
+    
+    <div class="directory-content">
+        <div class="dir-title">Team</div>
+
+        <div class="filter-nav-wrap">
+            <ul id="service-nav" class="simplefilter">
+                <li class="fltr-controls filtr-active" id="ALL" onclick="updatePage('ALL')">All</li>
+
+                <li class="fltr-controls " id="LEADERSHIP" onclick="updatePage('LEADERSHIP')">SENIOR LEADERSHIP</li>
+
+                <li class="fltr-controls " id="HR" onclick="updatePage('HR')">HUMAN RESOURCES</li>
+
+                <li class="fltr-controls " id="DEVELOPMENT" onclick="updatePage('DEVELOPMENT')">DEVELOPMENT</li>
+
+                <li class="fltr-controls " id="OUTREACH" onclick="updatePage('OUTREACH')">OUTREACH</li>
+
+                <li class="fltr-controls " id="MARKETING" onclick="updatePage('MARKETING')">MARKETING</li>
+
+                <li class="fltr-controls " id="TECHNOLOGY" onclick="updatePage('TECHNOLOGY')">TECHNOLOGY</li>
+
+                <li class="fltr-controls " id="OTHERS" onclick="updatePage('OTHERS')">OTHERS</li>
+
+            </ul>
+        </div>
+        <div class="grid-filter" id="grid" style="position:relative; height:700px">
+            <div id="DM" class="filter-box filtr-item ALL LEADERSHIP ">             
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info GOLD">
+                        <div class="team-name-wrapper">
+                            <p>David Min</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>Chief Executive Officer, Founder</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">BB&amp;N</span>
+                  <span class="team-grade">Junior</span>
+                </div>
+            </div>
+            <div id="NB"class="filter-box filtr-item ALL LEADERSHIP ">
+                
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info GOLD">
+                        <div class="team-name-wrapper">
+                            <p>Nathan Bornstein</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>Chief Operating Officer</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">BB&amp;N</span>
+                  <span class="team-grade">Junior</span>
+                </div>
+            </div>
+            <div id="DB" class="filter-box filtr-item ALL LEADERSHIP TECHNOLOGY">
+                
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info GOLD">
+                        <div class="team-name-wrapper">
+                            <p>Dan Bi</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>Chief Technology Officer</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">BB&amp;N</span>
+                  <span class="team-grade">Junior</span>
+                </div>
+            </div>
+            <div id="DH" class="filter-box filtr-item ALL TECHNOLOGY">
+                
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info PURPLE">
+                        <div class="team-name-wrapper">
+                            <p>Dylan Higgins</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>Website Development Team Member</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">BB&amp;N</span>
+                  <span class="team-grade">Junior</span>
+                </div>
+            </div>
+            <div id="AC" class="filter-box filtr-item ALL HR">
+                
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info BLUE">
+                        <div class="team-name-wrapper">
+                            <p>Abby Chen</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>Co-Director of Human Resources</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">BB&amp;N</span>
+                  <span class="team-grade">Junior</span>
+                </div>
+            </div>
+            <div id="AR" class="filter-box filtr-item ALL OTHERS HIDDEN">
+                
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info GRAY">
+                        <div class="team-name-wrapper">
+                            <p>Abigail Rabieh</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>Director of Logistics</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">BB&amp;N</span>
+                  <span class="team-grade">Senior</span>
+                </div>
+            </div>
+            <div id="AM" class="filter-box filtr-item ALL OTHERS">
+                
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info GRAY">
+                        <div class="team-name-wrapper">
+                            <p>Adrian Mendoza-Perez</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>Summer Enrichment Course leader</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">BB&amp;N</span>
+                  <span class="team-grade">Junior</span>
+                </div>
+            </div>
+            <div id="AL" class="filter-box filtr-item ALL MARKETING">
+                
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info ORANGE">
+                        <div class="team-name-wrapper">
+                            <p>Ava Levinson</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>Director of Social Media</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">BB&amp;N</span>
+                  <span class="team-grade">Senior</span>
+                </div>
+            </div>
+            <div id="BS" class="filter-box filtr-item ALL MARKETING HIDDEN">
+                
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info ORANGE">
+                        <div class="team-name-wrapper">
+                            <p>Bea Scanlon</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>Marketing Team Member</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">BB&amp;N</span>
+                  <span class="team-grade">Senior</span>
+                </div>
+            </div>
+            <div id="BB" class="filter-box filtr-item ALL HR">
+                
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info BLUE">
+                        <div class="team-name-wrapper">
+                            <p>Brendyn Burkitt</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>Co-Director of Human Resources</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">BB&amp;N</span>
+                  <span class="team-grade">Junior</span>
+                </div>
+            </div>
+            <div id="CY" class="filter-box filtr-item ALL TECHNOLOGY HIDDEN">
+                
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info PURPLE">
+                        <div class="team-name-wrapper">
+                            <p>Connie Yang</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>Website Development Team Member</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">BB&amp;N</span>
+                  <span class="team-grade">Junior</span>
+                </div>
+            </div>
+            <div id="CB" class="filter-box filtr-item ALL DEVELOPMENT">
+                
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info GREEN">
+                        <div class="team-name-wrapper">
+                            <p>Christian Bateman</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>Director of Development Team</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">BB&amp;N</span>
+                  <span class="team-grade">Sophomore</span>
+                </div>
+            </div>
+            <div id="FA" class="filter-box filtr-item ALL OTHERS">
+                
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info GRAY">
+                        <div class="team-name-wrapper">
+                            <p>Fatmata Sesay</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>Secretary</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">BB&amp;N</span>
+                  <span class="team-grade">Sophomore</span>
+                </div>
+            </div>
+            <div id="GB" class="filter-box filtr-item ALL LEADERSHIP">
+                
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info GOLD">
+                        <div class="team-name-wrapper">
+                            <p>Graham Bateman</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>Vice President</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">BB&amp;N</span>
+                  <span class="team-grade">Sophomore</span>
+                </div>
+            </div> 
+            <div id="JW" class="filter-box filtr-item ALL OUTREACH">
+                
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info LIGHTBLUE">
+                        <div class="team-name-wrapper">
+                            <p>Jonathan Wang</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>Director of Outreach</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">BB&amp;N</span>
+                  <span class="team-grade">Junior</span>
+                </div>
+            </div>
+            <div id="LL" class="filter-box filtr-item ALL DEVELOPMENT HIDDEN">
+                
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info GREEN">
+                        <div class="team-name-wrapper">
+                            <p>Lucas Liu</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>Development Team Member</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">BB&amp;N</span>
+                  <span class="team-grade">Sophomore</span>
+                </div>
+            </div>
+            <div id="NR" class="filter-box filtr-item ALL MARKETING HIDDEN">
+                
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info ORANGE">
+                        <div class="team-name-wrapper">
+                            <p>Nanako Ruping</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>Marketing Team Member</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">BB&amp;N</span>
+                  <span class="team-grade">Senior</span>
+                </div>
+            </div>
+            <div id="SK" class="filter-box filtr-item ALL DEVELOPMENT HIDDEN">
+                
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info GREEN">
+                        <div class="team-name-wrapper">
+                            <p>Sammy Krem</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>Development Team Member</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">BB&amp;N</span>
+                  <span class="team-grade">Junior</span>
+                </div>
+            </div>
+            <div id="TA" class="filter-box filtr-item ALL DEVELOPMENT HIDDEN">
+                
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info GREEN">
+                        <div class="team-name-wrapper">
+                            <p>Tushar Aggarwal</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>Development Team Member</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">BB&amp;N</span>
+                  <span class="team-grade">Junior</span>
+                </div>
+            </div>
+            <div id="JT" class="filter-box filtr-item ALL HR">
+                
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info BLUE">
+                        <div class="team-name-wrapper">
+                            <p>Julia Torrey</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>Human Resources Member</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">Milton Academy</span>
+                  <span class="team-grade">Sophomore</span>
+                </div>
+            </div>
+            <div id="ET" class="filter-box filtr-item ALL OUTREACH">
+                
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info BLUE">
+                        <div class="team-name-wrapper">
+                            <p>Emma Tung</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>Outreach Member</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">Milton Academy</span>
+                  <span class="team-grade">Junior</span>
+                </div>
+            </div>
+            <div id="JH" class="filter-box filtr-item ALL DEVELOPMENT">
+                
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info GREEN">
+                        <div class="team-name-wrapper">
+                            <p>Jeremy Hwang</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>Development Member</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">Milton Academy</span>
+                  <span class="team-grade">Junior</span>
+                </div>
+            </div>
+
+            <div id="CBR" class="filter-box filtr-item ALL DEVELOPMENT">
+                
+                <div class="team-info-wrapper">
+                    <blockquote class="team-info GREEN">
+                        <div class="team-name-wrapper">
+                            <p>Conrad Brown</p>
+                        </div>
+                        <div class="team-role-wrapper">
+                            <p>Development Member</p>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="team-extra-info">
+                  <span class="team-school">Milton Academy</span>
+                  <span class="team-grade">Junior</span>
+                </div>
+            </div>
+            <!-- for adding future members. OUTREACH = lightblue, DEVELOPMENT = green, HR = Blue -->
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="copyright">Copyright &copy; 2020 Bay Area COVID-Tutoring</div>
+        <div class="f-divider"></div>
+        <div class="created">Created by Dan Bi</div>
+        <div class="f-divider"></div>
+        <div class="socials">
+            <a href="mailto:bayareacovidtutoring@gmail.com"><i class="fab fa-google" id="gmail"></i></a>
+            <a href="https://www.instagram.com/bostoncovidtutoring/" id="insta"><i class="fab fa-instagram"></i></a>
+            <a href="facebook.com"><i class="fab fa-facebook-square" id="facebook"></i></a>
+        </div>
+    </div>
+    <!--<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.from('.lead-content-wrapper', {duration: 1, opacity: 0, scale: 0})
+    </script>
+
+    	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+	     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
+
+	<!-- Adding realtime-database Library -->
+	<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+
+
+    <script src="./../assets/Scripts/main.js"></script>
+    <script src="./../assets/Scripts/directory.js"></script>
+</body>
+</html>
