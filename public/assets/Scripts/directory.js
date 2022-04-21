@@ -14,7 +14,7 @@ firebase.initializeApp(firebaseConfig);
 
 var grid = document.getElementById("grid");
 
-var allCards = ["DM", "NB", "DB", "GB", "AC", "AL", "BS", "BB", "CBR", "CY", "DH", "ET", "CB", "JH", "JT", "JW", "LL", "NK", "NR", "PV", "SK", "TA", "AR", "AM", "FA"];
+var allCards = ["DM", "NB", "DB", "GB", "JT", "TR", "BB", "MLL", "SKH", "AC", "AL", "BS", "CBR", "CY", "DH", "ET", "CB", "JH", "JW", "LL", "NK", "NR", "PV", "SK", "TA", "AR", "AM", "FA"];
 //If initials repeat, simply include the second letter of their last name (and so on).
 
 updatePage("ALL"); // default to All filter
