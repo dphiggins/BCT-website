@@ -1930,18 +1930,24 @@ figcaption {
     background-position: center;
 }
 .person:nth-child(4) .headshot{
-    background-image: url(../img/julia.jpeg);
+    background-image: url(../img/graham.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .person:nth-child(5) .headshot{
-    background-image: url(../img/tasha.jpeg);
+    background-image: url(../img/christian.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .person:nth-child(6) .headshot{
+    background-image: url(../img/tasha.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.person:nth-child(7) .headshot{
     background-image: url(../img/brendyn.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
