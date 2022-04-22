@@ -1930,13 +1930,13 @@ figcaption {
     background-position: center;
 }
 .person:nth-child(4) .headshot{
-    background-image: url(../img/graham.jpeg);
+    background-image: url(../img/christian.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .person:nth-child(5) .headshot{
-    background-image: url(../img/christian.jpg);
+    background-image: url(../img/julia.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
