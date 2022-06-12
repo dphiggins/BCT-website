@@ -792,7 +792,7 @@ figcaption {
 /*Cambridge Day*/
 .cambridgeday-container{
     width: 90%;
-	height:150px;
+	height:100%;
     background: #E5E7E9;
     margin: 40px;
     margin-right: auto;
@@ -881,7 +881,7 @@ figcaption {
 @media screen and (max-width: 849px){
 	
 	.cambridgeday-container{
-		height:300px;
+		height:100%;
 	}
 	.cambridgeday-p p{
 		margin: auto;
