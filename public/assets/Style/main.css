@@ -265,7 +265,7 @@ figcaption {
 }
 #sign-up{
     word-spacing: normal;
-    margin-left: 150px;
+    margin-left: 50px;
     padding: 5px;
     background: #FF5733;
     border-radius: 5px;
@@ -306,7 +306,7 @@ figcaption {
 }
 @media screen and (max-width: 1150px){
     #sign-up{
-        margin-left: 20px;
+        margin-left: 10px;
         margin-right: 20px;
     }
     .nav-links{
@@ -318,7 +318,7 @@ figcaption {
         margin-left: 30px;
     }
 }
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1053px){
     .mobile { /*don't show mobile elements on desktop*/
         display: block;
     }
