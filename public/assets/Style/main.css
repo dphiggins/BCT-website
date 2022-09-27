@@ -1966,13 +1966,13 @@ figcaption {
     background-position: center;
 }
 .person:nth-child(10) .headshot{
-    background-image: url(../img/emmaNam.jpeg);
+    background-image: url(../img/rahdins.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .person:nth-child(11) .headshot{
-    background-image: url(../img/rahdins.jpeg);
+    background-image: url(../img/emmaNam.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
