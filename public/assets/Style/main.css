@@ -1912,19 +1912,19 @@ figcaption {
     flex-direction: column;
 }
 .person:nth-child(1) .headshot{
-    background-image: url(../img/david.jpeg);
+    background-image: url(../img/david.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .person:nth-child(2) .headshot{
-    background-image: url(../img/dan.jpg);
+    background-image: url(../img/graham.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .person:nth-child(3) .headshot{
-    background-image: url(../img/graham.jpeg);
+    background-image: url(../img/owen.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1942,13 +1942,37 @@ figcaption {
     background-position: center;
 }
 .person:nth-child(6) .headshot{
-    background-image: url(../img/tasha.jpeg);
+    background-image: url(../img/madeleineb.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .person:nth-child(7) .headshot{
-    background-image: url(../img/brendyn.jpeg);
+    background-image: url(../img/tasha.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.person:nth-child(8) .headshot{
+    background-image: url(../img/maderal.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.person:nth-child(9) .headshot{
+    background-image: url(../img/sophiak.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.person:nth-child(10) .headshot{
+    background-image: url(../img/emmaNam.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.person:nth-child(11) .headshot{
+    background-image: url(../img/rahdins.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
